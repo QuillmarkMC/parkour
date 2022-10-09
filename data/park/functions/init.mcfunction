@@ -69,5 +69,4 @@ gamerule playersSleepingPercentage 101
 gamerule reducedDebugInfo false
 gamerule showDeathMessages false
 gamerule spectatorsGenerateChunks true
-gamerule sendCommandFeedback false
-#adding this comment to test github webhook
+#gamerule sendCommandFeedback false
