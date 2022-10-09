@@ -1,6 +1,5 @@
 ##Scoreboards
 #Gamestate
-
 #All players should have a score on the gamestate scoreboard
 scoreboard objectives add gamestate dummy
 
@@ -9,10 +8,13 @@ scoreboard players set $lobby gamestate 0
 scoreboard players set $descent gamestate 1
 scoreboard players set $sculking gamestate 2
 scoreboard players set $undertow gamestate 3
-#These should be renamed when we get finalized course names
-scoreboard players set $parkour4 gamestate 4
-scoreboard players set $parkour5 gamestate 5
-scoreboard players set $parkour6 gamestate 6
+#These should be renamed and uncommented when we get finalized course names
+# scoreboard players set $parkour4 gamestate 4
+# scoreboard players set $parkour5 gamestate 5
+# scoreboard players set $parkour6 gamestate 6
+
+#Death
+scoreboard objectives add deaths deathCount
 
 ##Teams
 team add Visible
@@ -29,6 +31,16 @@ team modify Invisible deathMessageVisibility never
 team modify Invisible friendlyFire false
 team modify Invisible nametagVisibility never
 team modify Invisible seeFriendlyInvisibles false
+team add Spectator
+team modify Spectator collisionRule never
+team modify Spectator color dark_gray
+team modify Spectator deathMessageVisibility never
+team modify Spectator friendlyFire false
+team modify Spectator nametagVisibility never
+team modify Spectator seeFriendlyInvisibles false
+#just in case we wanna add dev stuff ¯\_(ツ)_/¯
+team add Dev
+team modify Dev color aqua
 
 ##Gamerules
 gamerule announceAdvancements false
@@ -54,7 +66,6 @@ gamerule keepInventory true
 gamerule mobGriefing false
 gamerule naturalRegeneration true
 gamerule playersSleepingPercentage 101
-#turn this off in final build?
 gamerule reducedDebugInfo false
 gamerule showDeathMessages false
 gamerule spectatorsGenerateChunks true
