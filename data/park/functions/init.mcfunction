@@ -3,6 +3,9 @@
 #All players should have a score on the gamestate scoreboard
 scoreboard objectives add gamestate dummy
 
+#Creates left_server tag to detect logouts
+scoreboard objectives add left_server minecraft.custom:minecraft.leave_game
+
 #Gamestate Enums
 scoreboard players set $lobby gamestate 0
 scoreboard players set $descent gamestate 1
