@@ -16,6 +16,12 @@ scoreboard players set $undertow gamestate 3
 # scoreboard players set $parkour5 gamestate 5
 # scoreboard players set $parkour6 gamestate 6
 
+#Descent completion scores for giving correct boots
+scoreboard objectives add descent_completed_chainmail dummy
+scoreboard objectives add descent_3rd_iron dummy
+scoreboard objectives add descent_2nd_gold dummy
+scoreboard objectives add descent_1st_diamond dummy
+
 #Death
 scoreboard objectives add deaths deathCount
 
