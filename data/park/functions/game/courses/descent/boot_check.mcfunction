@@ -1,5 +1,4 @@
 #Gives players with certain ranks the correct boots (will have to add rank system to give correct scores in the future)
-#Currently testing with command blocks at the start of descent
 
 item replace entity @s armor.feet with leather_boots{HideFlags:5,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]} 1
 execute if score @s descent_completed_chainmail matches 1 run item replace entity @s armor.feet with chainmail_boots{HideFlags:5,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]} 1
