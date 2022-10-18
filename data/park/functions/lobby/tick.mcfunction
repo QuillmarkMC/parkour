@@ -4,8 +4,5 @@ tag @a[scores={left_server=1..}] remove joined_server
 tag @a add joined_server
 scoreboard players reset @a left_server
 
-say test
-
 #Warp to Levels
-#function park:lobby/warp
-execute as @a[x=-650,y=59,z=-41,dx=0,dy=0,dz=0] at @s run say test
+function park:lobby/warp
