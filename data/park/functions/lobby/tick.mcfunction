@@ -5,4 +5,4 @@ tag @a add joined_server
 scoreboard players reset @a left_server
 
 #Warp to Levels
-function park:lobby/warp
+function park:lobby/levelstarts/warp
