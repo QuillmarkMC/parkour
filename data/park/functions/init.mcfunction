@@ -22,6 +22,12 @@ scoreboard objectives add descent_3rd_iron dummy
 scoreboard objectives add descent_2nd_gold dummy
 scoreboard objectives add descent_1st_diamond dummy
 
+#Descent Timer Scoreboards
+scoreboard objectives add descent_timer_ticks dummy
+scoreboard objectives add descent_timer_seconds dummy
+scoreboard objectives add descent_timer_minutes dummy
+scoreboard objectives add descent_timer_toggle dummy
+
 #Death
 scoreboard objectives add deaths deathCount
 
