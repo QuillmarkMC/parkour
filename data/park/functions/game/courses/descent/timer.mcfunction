@@ -8,4 +8,4 @@ execute if score @s descent_timer_seconds matches 60 run scoreboard players add 
 execute if score @s descent_timer_seconds matches 60 run scoreboard players set @s descent_timer_seconds 0
 
 #timer display
-title @s actionbar [{"text":"Time: ","color":"dark_gray","bold":true},{"score":{"name":"*","objective":"descent_timer_minutes"},"color":"white","bold":false},{"text":":","color":"white","bold":false},{"score":{"name":"*","objective":"descent_timer_seconds"},"color":"white","bold":false},{"text":".","color":"white","bold":false},{"score":{"name":"*","objective":"descent_timer_tenths"},"color":"white","bold":false},{"score":{"name":"","objective":""}}]
+title @s actionbar [{"text":"Time: ","color":"dark_gray","bold":true},{"score":{"name":"*","objective":"descent_timer_minutes"},"color":"white","bold":false},{"text":":","color":"white","bold":false},{"score":{"name":"*","objective":"descent_timer_seconds"},"color":"white","bold":false},{"text":".","color":"white","bold":false},{"score":{"name":"*","objective":"descent_timer_tenths"},"color":"white","bold":false}]
