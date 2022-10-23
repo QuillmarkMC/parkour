@@ -29,6 +29,9 @@ scoreboard objectives add descent_timer_seconds dummy
 scoreboard objectives add descent_timer_minutes dummy
 scoreboard objectives add descent_timer_toggle dummy
 
+#Descent countdown timer objective for start
+scoreboard objectives add descent_countdown_timer dummy
+
 #Death
 scoreboard objectives add deaths deathCount
 
