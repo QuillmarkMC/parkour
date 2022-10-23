@@ -7,12 +7,11 @@ execute as @a[scores={gamestate=1,descent_timer_toggle=1}] run function park:gam
 #Display Countdown Before Descent Begins (Proabably should optimize this I think it's bad but it works for now)
 execute as @a[scores={gamestate=1,descent_timer_toggle=0}] run scoreboard players add @s descent_countdown_timer 1
 execute as @a[scores={gamestate=1,descent_timer_toggle=0}] run tp @s -1085.5 200 1085.5 0 15
-execute as @a[scores={gamestate=1,descent_timer_toggle=0,descent_countdown_timer=5}] run title @s title "3"
-execute as @a[scores={gamestate=1,descent_timer_toggle=0,descent_countdown_timer=25}] run title @s title "2"
-execute as @a[scores={gamestate=1,descent_timer_toggle=0,descent_countdown_timer=45}] run title @s title "1"
-execute as @a[scores={gamestate=1,descent_timer_toggle=0,descent_countdown_timer=65}] run title @s title "Go!"
+execute as @a[scores={gamestate=1,descent_timer_toggle=0,descent_countdown_timer=5}] run title @s title {"text":"〉〉〉 3 〈〈〈","color":"red","bold":true}
+execute as @a[scores={gamestate=1,descent_timer_toggle=0,descent_countdown_timer=25}] run title @s title {"text":"〉〉 2 〈〈","color":"gold","bold":true}
+execute as @a[scores={gamestate=1,descent_timer_toggle=0,descent_countdown_timer=45}] run title @s title {"text":"〉 1 〈","color":"yellow","bold":true}
+execute as @a[scores={gamestate=1,descent_timer_toggle=0,descent_countdown_timer=65}] run title @s title {"text":"〉〉〉 Go! 〈〈〈","color":"green","bold":true}
 execute as @a[scores={gamestate=1,descent_timer_toggle=0,descent_countdown_timer=65}] run scoreboard players set @s descent_timer_toggle 1
 execute as @a[scores={gamestate=1,descent_timer_toggle=0,descent_countdown_timer=65}] run scoreboard players set @s descent_countdown_timer 0
-
 
 schedule function park:game/courses/descent/tick 1t replace
