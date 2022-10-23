@@ -1,3 +1,5 @@
+scoreboard players set @s gamestate 0
 tp @s -650 60 0 0 0
 gamemode adventure @s
 team join Visible
+scoreboard players reset @s click
