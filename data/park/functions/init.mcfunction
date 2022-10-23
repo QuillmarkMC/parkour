@@ -16,6 +16,9 @@ scoreboard players set $undertow gamestate 3
 # scoreboard players set $parkour5 gamestate 5
 # scoreboard players set $parkour6 gamestate 6
 
+#Carrot on a stick click scoreboard
+scoreboard objectives add click minecraft.used:carrot_on_a_stick
+
 #Descent completion scores for giving correct boots
 scoreboard objectives add descent_completed_chainmail dummy
 scoreboard objectives add descent_3rd_iron dummy
