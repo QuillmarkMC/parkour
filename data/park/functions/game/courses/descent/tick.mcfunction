@@ -11,7 +11,8 @@ execute as @a[scores={gamestate=1,descent_timer_toggle=0,descent_countdown_timer
 execute as @a[scores={gamestate=1,descent_timer_toggle=0,descent_countdown_timer=25}] run title @s title "2"
 execute as @a[scores={gamestate=1,descent_timer_toggle=0,descent_countdown_timer=45}] run title @s title "1"
 execute as @a[scores={gamestate=1,descent_timer_toggle=0,descent_countdown_timer=65}] run title @s title "Go!"
-execute as @a[scores={gamestate=1,descent_timer_toggle=0,descent_countdown_timer=65}] run scoreboard players set @s descent_countdown_timer 0
 execute as @a[scores={gamestate=1,descent_timer_toggle=0,descent_countdown_timer=65}] run scoreboard players set @s descent_timer_toggle 1
+execute as @a[scores={gamestate=1,descent_timer_toggle=0,descent_countdown_timer=65}] run scoreboard players set @s descent_countdown_timer 0
+
 
 schedule function park:game/courses/descent/tick 1t replace
