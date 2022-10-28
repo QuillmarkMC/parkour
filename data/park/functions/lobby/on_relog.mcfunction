@@ -4,3 +4,4 @@ gamemode adventure @s
 team join Visible
 scoreboard players reset @s click
 scoreboard players set @s descent_timer_toggle 0
+item replace entity @s armor.feet with air 1
