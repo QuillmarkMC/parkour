@@ -12,7 +12,9 @@ execute unless entity @a[scores={gamestate=2}] run schedule clear park:game/cour
 execute if entity @a[scores={gamestate=3}] run schedule function park:game/courses/undertow/tick 1t replace
 execute unless entity @a[scores={gamestate=3}] run schedule clear park:game/courses/undertow/tick
 
-#Parkour4
+#Frogger
+execute if entity @a[scores={gamestate=4}] run schedule function park:game/courses/frogger/tick 1t replace
+execute unless entity @a[scores={gamestate=4}] run schedule clear park:game/courses/frogger/tick
 
 #Parkour5
 

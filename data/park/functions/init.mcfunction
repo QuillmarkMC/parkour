@@ -35,6 +35,11 @@ scoreboard objectives add descent_timer_toggle dummy
 #Descent countdown timer objective for start
 scoreboard objectives add descent_countdown_timer dummy
 
+#Checkpoints
+scoreboard objectives add checkpoint dummy
+scoreboard objectives add checkpoint_order dummy
+scoreboard objectives add checkpoint_course dummy
+
 #Death
 scoreboard objectives add deaths deathCount
 
