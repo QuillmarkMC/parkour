@@ -32,6 +32,18 @@ scoreboard objectives add descent_timer_seconds dummy
 scoreboard objectives add descent_timer_minutes dummy
 scoreboard objectives add descent_timer_toggle dummy
 
+scoreboard objectives add descent_timer_comparison dummy
+
+#Descent Best Time Scoreboards
+
+scoreboard objectives add descent_best_time_ticks dummy
+scoreboard objectives add descent_best_time_tenths dummy
+scoreboard objectives add descent_best_time_seconds dummy
+scoreboard objectives add descent_best_time_minutes dummy
+
+scoreboard objectives add descent_best_time_comparison dummy
+scoreboard players set @a descent_best_time_comparison 2147483647
+
 #Descent countdown timer objective for start
 scoreboard objectives add descent_countdown_timer dummy
 

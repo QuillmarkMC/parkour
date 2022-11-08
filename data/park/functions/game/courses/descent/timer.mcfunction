@@ -1,4 +1,5 @@
-#scoreboard timer adding stuff
+#scoreboard timer adding stuff (descent_timer_comparison counts ticks, used to compare best time to current time)
+scoreboard players add @s descent_timer_comparison 1
 scoreboard players add @s descent_timer_ticks 1
 execute if score @s descent_timer_ticks matches 2 run scoreboard players add @s descent_timer_tenths 1
 execute if score @s descent_timer_ticks matches 2 run scoreboard players set @s descent_timer_ticks 0

@@ -6,6 +6,8 @@ scoreboard players set @s descent_timer_seconds 0
 scoreboard players set @s descent_timer_minutes 0
 scoreboard players set @s descent_countdown_timer 0
 
+scoreboard players set @s descent_timer_comparison 0
+
 #Enables timer, move this later so it doesn't start immediately
 #scoreboard players set @s descent_timer_toggle 1
 
