@@ -44,6 +44,18 @@ scoreboard objectives add descent_best_time_minutes dummy
 scoreboard objectives add descent_best_time_comparison dummy
 scoreboard players set @a descent_best_time_comparison 2147483647
 
+#Descent Top Time Comparisons
+scoreboard objectives add descent_top_comparison_1 dummy
+scoreboard objectives add descent_top_comparison_2 dummy
+scoreboard objectives add descent_top_comparison_3 dummy
+scoreboard objectives add descent_top_comparison_4 dummy
+scoreboard objectives add descent_top_comparison_5 dummy
+scoreboard players set time_comparison descent_top_comparison_1 2147483647
+scoreboard players set time_comparison descent_top_comparison_2 2147483647
+scoreboard players set time_comparison descent_top_comparison_3 2147483647
+scoreboard players set time_comparison descent_top_comparison_4 2147483647
+scoreboard players set time_comparison descent_top_comparison_5 2147483647
+
 #Descent countdown timer objective for start
 scoreboard objectives add descent_countdown_timer dummy
 
