@@ -1,4 +1,4 @@
-#Relog Detection (relog function currently enabled)
+#Relog Detection (relog function currently *enabled*)
 tag @a[scores={left_server=1..}] remove joined_server
 execute as @a[tag=!joined_server] run function park:lobby/on_relog
 tag @a add joined_server
