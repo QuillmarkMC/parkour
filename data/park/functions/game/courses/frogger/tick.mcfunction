@@ -7,7 +7,7 @@ execute as @a[scores={gamestate=4,frogger_timer_toggle=1}] run function park:gam
 #Display Countdown Before frogger Begins (Proabably should optimize this I think it's bad but it works for now)
 execute as @a[scores={gamestate=4,frogger_timer_toggle=0}] run function park:game/courses/frogger/boot_check
 execute as @a[scores={gamestate=4,frogger_timer_toggle=0}] run scoreboard players add @s frogger_countdown_timer 1
-execute as @a[scores={gamestate=4,frogger_timer_toggle=0}] run tp @s -1085.5 200 1085.5 0 15
+execute as @a[scores={gamestate=4,frogger_timer_toggle=0}] run tp @s -1151.50 72.00 2107.50 -89.38 6.30
 execute as @a[scores={gamestate=4,frogger_timer_toggle=0,frogger_countdown_timer=15}] run title @s title {"text":"〉〉〉 3 〈〈〈","color":"red","bold":true}
 execute as @a[scores={gamestate=4,frogger_timer_toggle=0,frogger_countdown_timer=15}] at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 100 1
 execute as @a[scores={gamestate=4,frogger_timer_toggle=0,frogger_countdown_timer=35}] run title @s title {"text":"〉〉 2 〈〈","color":"gold","bold":true}
