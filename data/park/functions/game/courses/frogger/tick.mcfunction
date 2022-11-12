@@ -21,4 +21,7 @@ execute as @a[scores={gamestate=4,frogger_timer_toggle=0,frogger_countdown_timer
 #OoB Detection (Could probably move to main tick tbh)
 execute as @a[scores={gamestate=4}] run function park:game/checkpoints/reset_player
 
+execute as @a[scores={gamestate=4}] run effect give @s minecraft:speed 999999 3 true
+execute as @a[scores={gamestate=4}] run effect give @s minecraft:jump_boost 999999 4 true
+
 schedule function park:game/courses/frogger/tick 1t replace
