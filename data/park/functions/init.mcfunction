@@ -99,6 +99,46 @@ scoreboard players set time_comparison frogger_top_comparison_5 2147483647
 #Frogger countdown timer objective for start
 scoreboard objectives add frogger_countdown_timer dummy
 
+#Sculking completion scores for giving correct boots
+scoreboard objectives add sculking_completed_chainmail dummy
+scoreboard objectives add sculking_3rd_iron dummy
+scoreboard objectives add sculking_2nd_gold dummy
+scoreboard objectives add sculking_1st_diamond dummy
+
+#Sculking Timer Scoreboards
+scoreboard objectives add sculking_timer_ticks dummy
+scoreboard objectives add sculking_timer_tenths dummy
+scoreboard objectives add sculking_timer_seconds dummy
+scoreboard objectives add sculking_timer_minutes dummy
+scoreboard objectives add sculking_timer_toggle dummy
+
+scoreboard objectives add sculking_timer_comparison dummy
+
+#Sculking Best Time Scoreboards
+
+scoreboard objectives add sculking_best_time_ticks dummy
+scoreboard objectives add sculking_best_time_tenths dummy
+scoreboard objectives add sculking_best_time_seconds dummy
+scoreboard objectives add sculking_best_time_minutes dummy
+
+scoreboard objectives add sculking_best_time_comparison dummy
+scoreboard players set @a sculking_best_time_comparison 2147483647
+
+#Sculking Top Time Comparisons
+scoreboard objectives add sculking_top_comparison_1 dummy
+scoreboard objectives add sculking_top_comparison_2 dummy
+scoreboard objectives add sculking_top_comparison_3 dummy
+scoreboard objectives add sculking_top_comparison_4 dummy
+scoreboard objectives add sculking_top_comparison_5 dummy
+scoreboard players set time_comparison sculking_top_comparison_1 2147483647
+scoreboard players set time_comparison sculking_top_comparison_2 2147483647
+scoreboard players set time_comparison sculking_top_comparison_3 2147483647
+scoreboard players set time_comparison sculking_top_comparison_4 2147483647
+scoreboard players set time_comparison sculking_top_comparison_5 2147483647
+
+#Sculking countdown timer objective for start
+scoreboard objectives add sculking_countdown_timer dummy
+
 #Checkpoints
 scoreboard objectives add checkpoint dummy
 scoreboard objectives add checkpoint_order dummy
