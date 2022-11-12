@@ -21,6 +21,6 @@ execute as @a[scores={gamestate=3,undertow_timer_toggle=0,undertow_countdown_tim
 #OoB Detection (Could probably move to main tick tbh)
 execute as @a[scores={gamestate=3}] run function park:game/checkpoints/reset_player
 
-item replace entity @s hotbar.0 with trident{Enchantments:[{id:"minecraft:riptide",lvl:3s}]} 1
+execute as @a[scores={gamestate=3}] run item replace entity @s hotbar.0 with trident{Enchantments:[{id:"minecraft:riptide",lvl:3s}]} 1
 
 schedule function park:game/courses/undertow/tick 1t replace
