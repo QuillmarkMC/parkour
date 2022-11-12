@@ -1,5 +1,5 @@
 #Checkpoints--These need to be changed, these are the checkpoints for Descent
-kill @e[tag=Checkpoint,tag=Frogger]
+kill @e[tag=Checkpoint,tag=Sculking]
 
 #Start
 data modify storage park:checkpoint_constructor Number set value 0

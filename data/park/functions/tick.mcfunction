@@ -15,4 +15,4 @@ execute as @a[scores={click=1..},nbt={SelectedItem:{tag:{lobby:1}}}] run functio
 execute as @a[scores={click=1..},nbt={SelectedItem:{tag:{restart:1}}}] run function park:game/restart_check
 
 #Restart from checkpoint carrot on stick check
-execute as @a[scores={click=1..},nbt={SelectedItem:{tag:{checkpoint:1}}}] run function park:functions/game/checkpoints/reset_player.mcfunction
+execute as @a[scores={click=1..},nbt={SelectedItem:{tag:{checkpoint:1}}}] run function park:game/checkpoints/reset_player
