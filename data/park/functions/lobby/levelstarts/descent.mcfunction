@@ -14,4 +14,7 @@ scoreboard players set @s descent_timer_comparison 0
 #Enables timer, move this later so it doesn't start immediately
 #scoreboard players set @s descent_timer_toggle 1
 
+#Bugfix, I know it's weird
+execute if score @p gamestate matches 4 run tp @s -1151.50 72.00 2107.50 -89.38 6.30
+
 function park:game/update_tick
