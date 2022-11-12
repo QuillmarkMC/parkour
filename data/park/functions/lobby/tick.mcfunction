@@ -4,9 +4,11 @@ execute as @a[tag=!joined_server] run function park:lobby/on_relog
 tag @a add joined_server
 scoreboard players reset @a left_server
 
-#Clear Frogger Effects
+#Clear Frogger & Sculking Effects
 execute as @a[scores={gamestate=0}] run effect clear @s speed
 execute as @a[scores={gamestate=0}] run effect clear @s jump_boost
+execute as @a[scores={gamestate=0}] run effect clear @s darkness
+execute as @a[scores={gamestate=0}] run effect clear @s night_vision
 
 #Warp to Levels
 function park:lobby/levelstarts/warp

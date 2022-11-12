@@ -21,4 +21,7 @@ execute as @a[scores={gamestate=2,sculking_timer_toggle=0,sculking_countdown_tim
 #OoB Detection (Could probably move to main tick tbh)
 execute as @a[scores={gamestate=2}] run function park:game/checkpoints/reset_player
 
+execute as @a[scores={gamestate=2}] run effect give @s minecraft:darkness 999999 0 true
+execute as @a[scores={gamestate=2}] run effect give @s minecraft:night_vision 999999 0 true
+
 schedule function park:game/courses/sculking/tick 1t replace
