@@ -16,3 +16,6 @@ execute as @a[scores={click=1..},nbt={SelectedItem:{tag:{restart:1}}}] run funct
 
 #Restart from checkpoint carrot on stick check
 execute as @a[scores={click=1..},nbt={SelectedItem:{tag:{checkpoint:1}}}] run function park:game/checkpoints/reset_player
+
+#OoB Detection (i have moved this to main tick)
+execute as @a[scores={gamestate=1..6}] at @s if block ~ ~ ~ minecraft:tripwire run function park:game/checkpoints/reset_player

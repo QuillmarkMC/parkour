@@ -18,8 +18,6 @@ execute as @a[scores={gamestate=2,sculking_timer_toggle=0,sculking_countdown_tim
 execute as @a[scores={gamestate=2,sculking_timer_toggle=0,sculking_countdown_timer=75}] at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 100 2
 execute as @a[scores={gamestate=2,sculking_timer_toggle=0,sculking_countdown_timer=75}] run scoreboard players set @s sculking_timer_toggle 1
 execute as @a[scores={gamestate=2,sculking_timer_toggle=0,sculking_countdown_timer=75}] run scoreboard players set @s sculking_countdown_timer 0
-#OoB Detection (Could probably move to main tick tbh)
-execute as @a[scores={gamestate=2}] run function park:game/checkpoints/reset_player
 
 execute as @a[scores={gamestate=2}] run effect give @s minecraft:darkness 999999 0 true
 execute as @a[scores={gamestate=2}] run effect give @s minecraft:night_vision 999999 0 true

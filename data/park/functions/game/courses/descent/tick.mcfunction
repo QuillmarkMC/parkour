@@ -19,7 +19,4 @@ execute as @a[scores={gamestate=1,descent_timer_toggle=0,descent_countdown_timer
 execute as @a[scores={gamestate=1,descent_timer_toggle=0,descent_countdown_timer=75}] run scoreboard players set @s descent_timer_toggle 1
 execute as @a[scores={gamestate=1,descent_timer_toggle=0,descent_countdown_timer=75}] run scoreboard players set @s descent_countdown_timer 0
 
-#OoB Detection (Could probably move to main tick tbh)
-execute as @a[scores={gamestate=1}] run function park:game/checkpoints/reset_player
-
 schedule function park:game/courses/descent/tick 1t replace
