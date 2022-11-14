@@ -1,6 +1,6 @@
 scoreboard players set @s frogger_timer_toggle 0
 
-execute if score @s frogger_timer_comparison < @s frogger_best_time_comparison run function park:game/courses/frogger/new_best_time
+execute if score @s frogger_timer_comparison < @s frogger_best_time_comparison run function park:game/courses/frogger/timer/new_best_time
 
 execute if score @s frogger_timer_seconds matches 10..60 run tellraw @s [{"text":"Level Clear! ","color":"green","bold":true},{"text":"Your Time: ","color":"white","bold":false},{"score":{"name":"*","objective":"frogger_timer_minutes"},"color":"white"},{"text":":","color":"white"},{"score":{"name":"*","objective":"frogger_timer_seconds"},"color":"white"},{"text":".","color":"white"},{"score":{"name":"*","objective":"frogger_timer_tenths"},"color":"white"}]
 execute if score @s frogger_timer_seconds matches 0..9 run tellraw @s [{"text":"Level Clear! ","color":"green","bold":true},{"text":"Your Time: ","color":"white","bold":false},{"score":{"name":"*","objective":"frogger_timer_minutes"},"color":"white"},{"text":":0","color":"white"},{"score":{"name":"*","objective":"frogger_timer_seconds"},"color":"white"},{"text":".","color":"white"},{"score":{"name":"*","objective":"frogger_timer_tenths"},"color":"white"}]

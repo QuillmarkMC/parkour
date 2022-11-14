@@ -3,20 +3,25 @@ kill @e[tag=Checkpoint,tag=Frogger]
 
 #Start
 data modify storage park:checkpoint_constructor Number set value 0
-data modify storage park:checkpoint_constructor Course set value 1
-execute positioned 12.5 -60 23.5 run function park:game/checkpoints/summon
+data modify storage park:checkpoint_constructor Course set value 4
+execute positioned -1151.5 72 2107.5 run function park:game/checkpoints/summon
 
 #1
 data modify storage park:checkpoint_constructor Number set value 1
-data modify storage park:checkpoint_constructor Course set value 1
-execute positioned 22.5 -60 19.5 run function park:game/checkpoints/summon
+data modify storage park:checkpoint_constructor Course set value 4
+execute positioned -1064.5 74 2046.5 run function park:game/checkpoints/summon
 
 #2
 data modify storage park:checkpoint_constructor Number set value 2
-data modify storage park:checkpoint_constructor Course set value 1
-execute positioned 18.5 -60 10.5 run function park:game/checkpoints/summon
+data modify storage park:checkpoint_constructor Course set value 4
+execute positioned -1025.5 106 2054.5 run function park:game/checkpoints/summon
 
 #3
 data modify storage park:checkpoint_constructor Number set value 3
-data modify storage park:checkpoint_constructor Course set value 1
-execute positioned 13.5 -60 5.5 run function park:game/checkpoints/summon
+data modify storage park:checkpoint_constructor Course set value 4
+execute positioned -1020.5 134 2055.5 run function park:game/checkpoints/summon
+
+#4
+data modify storage park:checkpoint_constructor Number set value 4
+data modify storage park:checkpoint_constructor Course set value 4
+execute positioned -1035.5 85 2041.5 run function park:game/checkpoints/summon

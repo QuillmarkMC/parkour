@@ -1,8 +1,8 @@
-scoreboard players set @s descent_timer_toggle 0
+scoreboard players set @s timer_toggle 0
 
-execute if score @s descent_timer_comparison < @s descent_best_time_comparison run function park:game/courses/descent/new_best_time
+execute if score @s descent_timer_comparison < @s descent_best_time_comparison run function park:game/courses/descent/timer/new_best_time
 
-execute if score @s descent_timer_seconds matches 10..60 run tellraw @s [{"text":"Level Clear! ","color":"green","bold":true},{"text":"Your Time: ","color":"white","bold":false},{"score":{"name":"*","objective":"descent_timer_minutes"},"color":"white"},{"text":":","color":"white"},{"score":{"name":"*","objective":"descent_timer_seconds"},"color":"white"},{"text":".","color":"white"},{"score":{"name":"*","objective":"descent_timer_tenths"},"color":"white"}]
+execute unless score @s descent_timer_seconds matches 0..9 run tellraw @s [{"text":"Level Clear! ","color":"green","bold":true},{"text":"Your Time: ","color":"white","bold":false},{"score":{"name":"*","objective":"descent_timer_minutes"},"color":"white"},{"text":":","color":"white"},{"score":{"name":"*","objective":"descent_timer_seconds"},"color":"white"},{"text":".","color":"white"},{"score":{"name":"*","objective":"descent_timer_tenths"},"color":"white"}]
 execute if score @s descent_timer_seconds matches 0..9 run tellraw @s [{"text":"Level Clear! ","color":"green","bold":true},{"text":"Your Time: ","color":"white","bold":false},{"score":{"name":"*","objective":"descent_timer_minutes"},"color":"white"},{"text":":0","color":"white"},{"score":{"name":"*","objective":"descent_timer_seconds"},"color":"white"},{"text":".","color":"white"},{"score":{"name":"*","objective":"descent_timer_tenths"},"color":"white"}]
 
 #this is awful but I wanted to keep it on one function to make it easier to copy so here we are

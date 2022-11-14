@@ -19,6 +19,14 @@ scoreboard players set $frogger gamestate 4
 #Carrot on a stick click scoreboard
 scoreboard objectives add click minecraft.used:carrot_on_a_stick
 
+#General Timer
+scoreboard objectives add timer_ticks dummy
+scoreboard objectives add timer_tenths dummy
+scoreboard objectives add timer_seconds dummy
+scoreboard objectives add timer_minutes dummy
+scoreboard objectives add timer_toggle dummy
+scoreboard players set $tick_mod timer_ticks 2
+
 #Descent completion scores for giving correct boots
 scoreboard objectives add descent_completed_chainmail dummy
 scoreboard objectives add descent_3rd_iron dummy
@@ -241,3 +249,6 @@ gamerule reducedDebugInfo false
 gamerule showDeathMessages false
 gamerule spectatorsGenerateChunks true
 #gamerule sendCommandFeedback false
+
+#Force Loads
+forceload add -1085 1085
