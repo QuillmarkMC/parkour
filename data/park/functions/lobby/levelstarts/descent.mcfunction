@@ -4,4 +4,6 @@ scoreboard players operation @s gamestate = $descent gamestate
 
 function park:game/checkpoints/reset_player_fully
 
+function park:game/courses/descent/boot_check
+
 function park:game/update_tick
