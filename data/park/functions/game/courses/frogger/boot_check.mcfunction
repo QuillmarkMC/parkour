@@ -1,3 +1,16 @@
+#Checks for completion
+execute if score @s frogger_best_time_comparison matches 2147483647 run scoreboard players set @s frogger_completed_chainmail 1
+
+#Compares best time to top 3rd, 2nd, 1st time, if it's the same, set everyone else's boot score to 0, set own boot score to 1
+execute if score @s frogger_best_time_comparison = time_comparison frogger_top_comparison_3 run scoreboard players set @a frogger_3rd_iron 0
+execute if score @s frogger_best_time_comparison = time_comparison frogger_top_comparison_3 run scoreboard players set @s frogger_3rd_iron 1
+
+execute if score @s frogger_best_time_comparison = time_comparison frogger_top_comparison_2 run scoreboard players set @a frogger_2nd_gold 0
+execute if score @s frogger_best_time_comparison = time_comparison frogger_top_comparison_2 run scoreboard players set @s frogger_2nd_gold 1
+
+execute if score @s frogger_best_time_comparison = time_comparison frogger_top_comparison_1 run scoreboard players set @a frogger_1st_diamond 0
+execute if score @s frogger_best_time_comparison = time_comparison frogger_top_comparison_1 run scoreboard players set @s frogger_1st_diamond 1
+
 #Gives players with certain ranks the correct boots (will have to add rank system to give correct scores in the future)
 
 item replace entity @s armor.feet with leather_boots{HideFlags:5,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]} 1
