@@ -195,6 +195,9 @@ scoreboard objectives add checkpoint_course dummy
 #Death
 scoreboard objectives add deaths deathCount
 
+#Initial Login Check Score
+scoreboard objectives add has_logged_in dummy
+
 ##Teams
 team add Visible
 team modify Visible collisionRule never
