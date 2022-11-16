@@ -15,4 +15,7 @@ execute if data storage park:checkpoint_constructor {Course:3} run tag @s add Un
 execute if data storage park:checkpoint_constructor {Course:4} run tag @s add Frogger
 execute store result score @s checkpoint_course run data get storage park:checkpoint_constructor Course
 
+#set checkpoint rotation
+data modify entity @s data.Rotation set from storage park:checkpoint_constructor Rotation
+
 tag @s remove CPInit

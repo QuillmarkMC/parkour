@@ -19,7 +19,8 @@ execute as @a[scores={click=1..},nbt={SelectedItem:{tag:{checkpoint:1}}}] unless
 execute as @a if score @s click matches 1.. run scoreboard players set @s click 0
 
 #OoB Detection (i have moved this to main tick)
-execute as @a[scores={gamestate=1..6}] at @s if block ~ ~ ~ minecraft:tripwire run function park:game/checkpoints/reset_player
+execute as @a if score @s gamestate matches 1..6 at @s if block ~ ~ ~ minecraft:tripwire run function park:game/checkpoints/reset_player
+execute as @a if score @s gamestate matches 1..6 at @s if predicate park:below_void run function park:game/checkpoints/reset_player
 
 #Kill Items
 kill @e[type=item]
