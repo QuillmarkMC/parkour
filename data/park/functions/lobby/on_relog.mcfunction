@@ -1,5 +1,6 @@
 scoreboard players operation @s gamestate = $lobby gamestate
 tp @s -650 60 0 0 0
+spawnpoint @s -650 60 0
 gamemode adventure @s
 team join Visible
 scoreboard players reset @s click

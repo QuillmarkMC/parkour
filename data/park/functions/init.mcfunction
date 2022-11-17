@@ -254,4 +254,39 @@ gamerule spectatorsGenerateChunks true
 #gamerule sendCommandFeedback false
 
 #Force Loads
+#Descent
 forceload add -1085 1085
+forceload add -1085 1114
+forceload add -1106 1144
+forceload add -1133 1132
+forceload add -1096 1113
+forceload add -1071 1046
+forceload add -1107 1047
+forceload add -1065 1090
+forceload add -1170 1103
+
+#Sculking
+forceload add -11 0
+forceload add -116 0
+forceload add -179 0
+forceload add -193 0
+forceload add -156 -2
+forceload add -121 -2
+forceload add -101 -1
+forceload add -78 -1
+
+#Undertow
+forceload add -226 -979
+forceload add -226 -987
+forceload add -292 -977
+forceload add -201 -921
+forceload add -171 -987
+forceload add -231 -984
+forceload add -251 -984
+
+#Frogger
+forceload add -1152 2107
+forceload add -1065 2046
+forceload add -1026 2054
+forceload add -1021 2055
+forceload add -1036 2041

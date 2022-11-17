@@ -19,10 +19,8 @@ execute as @a[scores={click=1..},nbt={SelectedItem:{tag:{checkpoint:1}}}] unless
 execute as @a if score @s click matches 1.. run scoreboard players set @s click 0
 
 #OoB Detection (i have moved this to main tick)
-execute as @a[scores={gamestate=1..6}] at @s if block ~ ~ ~ minecraft:tripwire run function park:game/checkpoints/reset_player
-execute as @a[scores={gamestate=1}] at @s if block ~ ~ ~ minecraft:lava run function park:game/checkpoints/reset_player
-execute as @a[scores={gamestate=1}] at @s if block ~ ~ ~ minecraft:water run function park:game/checkpoints/reset_player
-execute as @a[scores={gamestate=4}] at @s if block ~ ~ ~ minecraft:water run function park:game/checkpoints/reset_player
+execute as @a if score @s gamestate matches 1..6 at @s if block ~ ~ ~ minecraft:tripwire run function park:game/checkpoints/reset_player
+execute as @a if score @s gamestate matches 1..6 at @s if predicate park:below_void run function park:game/checkpoints/reset_player
 
 #Set default best time for all courses to 21 million ticks
 execute as @a unless score @s has_logged_in matches 1 run scoreboard players set @s descent_best_time_comparison 2147483647
