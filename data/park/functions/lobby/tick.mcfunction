@@ -9,6 +9,7 @@ execute as @a[scores={gamestate=0}] run effect clear @s speed
 execute as @a[scores={gamestate=0}] run effect clear @s jump_boost
 execute as @a[scores={gamestate=0}] run effect clear @s darkness
 execute as @a[scores={gamestate=0}] run effect clear @s night_vision
+execute as @a[scores={gamestate=0}] run effect clear @s invisibility
 
 #Your best score displays when near portal
 execute as @a[x=-662,y=59,z=-28,dx=24,dy=15,dz=-10] if score @s descent_best_time_comparison matches ..2147483646 run title @s actionbar [{"text":"Descent PB: "},{"score":{"name":"*","objective":"descent_best_time_minutes"}},{"text":":"},{"score":{"name":"*","objective":"descent_best_time_seconds"}},{"text":"."},{"score":{"name":"*","objective":"descent_best_time_tenths"}}]

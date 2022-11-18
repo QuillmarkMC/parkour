@@ -16,6 +16,7 @@ execute as @a[scores={click=1..},nbt={SelectedItem:{tag:{lobby:1}}}] run functio
 execute as @a[scores={click=1..},nbt={SelectedItem:{tag:{restart:1}}}] run function park:game/checkpoints/reset_player_fully
 execute as @a[scores={click=1..},nbt={SelectedItem:{tag:{checkpoint:1}}}] if score @s checkpoint matches 0 run function park:game/checkpoints/reset_player_fully
 execute as @a[scores={click=1..},nbt={SelectedItem:{tag:{checkpoint:1}}}] unless score @s checkpoint matches 0 run function park:game/checkpoints/reset_player
+execute as @a[scores={click=1..},nbt={SelectedItem:{tag:{team:1}}}] run function park:game/hotbar_utilities/team
 execute as @a if score @s click matches 1.. run scoreboard players set @s click 0
 
 #OoB Detection (i have moved this to main tick)
@@ -27,3 +28,4 @@ kill @e[type=item]
 
 #Persistant Effects
 effect give @a saturation 999999 255 true
+effect give @a[scores={gamestate=1..6}] invisibility 4 0 true
