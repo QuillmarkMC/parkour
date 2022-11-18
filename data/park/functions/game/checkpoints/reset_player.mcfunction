@@ -7,3 +7,4 @@ data modify entity @e[tag=ResetRotationMarker,limit=1] Rotation[0] set from enti
 tp @s @e[tag=ResetRotationMarker,limit=1]
 tag @e[tag=ResetCheckpoint] remove ResetCheckpoint
 kill @e[tag=ResetRotationMarker]
+execute at @s run playsound minecraft:entity.enderman.teleport master @s
