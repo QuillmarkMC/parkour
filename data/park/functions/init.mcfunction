@@ -198,6 +198,13 @@ scoreboard objectives add deaths deathCount
 #Initial Login Check Score
 scoreboard objectives add has_logged_in dummy
 
+#Set Default Scores (N/A - **:**.*)
+clone -646 -1 -6 -643 3 -6 -656 -1 -6
+clone -646 -1 -6 -643 3 -6 -656 -1 -16
+clone -646 -1 -6 -643 3 -6 -656 -1 -26
+clone -646 -1 -6 -643 3 -6 -656 -1 -36
+clone -646 -1 -6 -643 3 -6 -656 -1 -46
+
 ##Teams
 team add Visible
 team modify Visible collisionRule never
