@@ -1,0 +1,1 @@
+scoreboard players set $undertow disabled 0

@@ -1,0 +1,1 @@
+scoreboard players set $frozen_hell disabled 0

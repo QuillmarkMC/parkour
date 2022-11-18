@@ -1,0 +1,1 @@
+scoreboard players set $frogger disabled 1
