@@ -26,3 +26,6 @@ item replace entity @s inventory.23 with air
 item replace entity @s inventory.24 with air
 item replace entity @s inventory.25 with air
 item replace entity @s inventory.26 with air
+item replace entity @s armor.head with air
+item replace entity @s armor.chest with air
+item replace entity @s armor.legs with air
