@@ -53,4 +53,5 @@ execute positioned -1065.5 133 1090.5 run function park:game/checkpoints/summon
 data modify storage park:checkpoint_constructor Number set value 8
 data modify storage park:checkpoint_constructor Course set value 1
 data modify storage park:checkpoint_constructor Rotation set value 0.0f
+data modify storage park:checkpoint_constructor Finish set value true
 execute positioned -1170.5 125 1103.5 run function park:game/checkpoints/summon

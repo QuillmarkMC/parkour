@@ -1,6 +1,9 @@
+execute if entity @s[tag=!has_logged_in] run function park:game/timer/clear/pbs/all
+execute if entity @s[tag=!has_logged_in] run tag @s add has_logged_in
 scoreboard players operation @s gamestate = $lobby gamestate
-tp @s -650 60 0 0 0
-spawnpoint @s -650 60 0
+execute if score @s player_id matches ..0 run function park:lobby/new_id
+tp @s -650 60 0 180 0
+spawnpoint @s -650 60 0 180
 gamemode adventure @s
 team join Visible
 scoreboard players reset @s click

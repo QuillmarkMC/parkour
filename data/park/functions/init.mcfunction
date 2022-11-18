@@ -12,9 +12,8 @@ scoreboard players set $descent gamestate 1
 scoreboard players set $sculking gamestate 2
 scoreboard players set $undertow gamestate 3
 scoreboard players set $frogger gamestate 4
-#These should be renamed and uncommented when we get finalized course names
-# scoreboard players set $parkour5 gamestate 5
-# scoreboard players set $parkour6 gamestate 6
+scoreboard players set $spectrum gamestate 5
+scoreboard players set $frozen_hell gamestate 6
 
 #Carrot on a stick click scoreboard
 scoreboard objectives add click minecraft.used:carrot_on_a_stick
@@ -27,45 +26,40 @@ scoreboard objectives add timer_minutes dummy
 scoreboard objectives add timer_toggle dummy
 scoreboard players set $tick_mod timer_ticks 2
 
+#Ticks to time
+scoreboard objectives add ticks_to_time dummy
+scoreboard players set $1200 ticks_to_time 1200
+scoreboard players set $20 ticks_to_time 20
+scoreboard players set $2 ticks_to_time 2
+
+#Player IDs
+scoreboard objectives add player_id dummy
+execute unless score $id_num player_id matches 1.. run scoreboard players set $id_num player_id 1
+
+#Personal Bests
+scoreboard objectives add descent_pb dummy
+scoreboard objectives add sculking_pb dummy
+scoreboard objectives add undertow_pb dummy
+scoreboard objectives add frogger_pb dummy
+scoreboard objectives add frozen_hell_pb dummy
+
+#Top Times
+scoreboard objectives add descent_record dummy
+scoreboard objectives add descent_record_ids dummy
+scoreboard objectives add sculking_record dummy
+scoreboard objectives add sculking_record_ids dummy
+scoreboard objectives add undertow_record dummy
+scoreboard objectives add undertow_record_ids dummy
+scoreboard objectives add frogger_record dummy
+scoreboard objectives add frogger_record_ids dummy
+scoreboard objectives add frozen_hell_record dummy
+scoreboard objectives add frozen_hell_record_ids dummy
+
 #Descent completion scores for giving correct boots
 scoreboard objectives add descent_completed_chainmail dummy
 scoreboard objectives add descent_3rd_iron dummy
 scoreboard objectives add descent_2nd_gold dummy
 scoreboard objectives add descent_1st_diamond dummy
-
-#Descent Timer Scoreboards
-scoreboard objectives add descent_timer_ticks dummy
-scoreboard objectives add descent_timer_tenths dummy
-scoreboard objectives add descent_timer_seconds dummy
-scoreboard objectives add descent_timer_minutes dummy
-scoreboard objectives add descent_timer_toggle dummy
-
-scoreboard objectives add descent_timer_comparison dummy
-
-#Descent Best Time Scoreboards
-
-scoreboard objectives add descent_best_time_ticks dummy
-scoreboard objectives add descent_best_time_tenths dummy
-scoreboard objectives add descent_best_time_seconds dummy
-scoreboard objectives add descent_best_time_minutes dummy
-
-scoreboard objectives add descent_best_time_comparison dummy
-scoreboard players set @a descent_best_time_comparison 2147483647
-
-#Descent Top Time Comparisons
-scoreboard objectives add descent_top_comparison_1 dummy
-scoreboard objectives add descent_top_comparison_2 dummy
-scoreboard objectives add descent_top_comparison_3 dummy
-scoreboard objectives add descent_top_comparison_4 dummy
-scoreboard objectives add descent_top_comparison_5 dummy
-scoreboard players set time_comparison descent_top_comparison_1 2147483647
-scoreboard players set time_comparison descent_top_comparison_2 2147483647
-scoreboard players set time_comparison descent_top_comparison_3 2147483647
-scoreboard players set time_comparison descent_top_comparison_4 2147483647
-scoreboard players set time_comparison descent_top_comparison_5 2147483647
-
-#Descent countdown timer objective for start
-scoreboard objectives add descent_countdown_timer dummy
 
 #Frogger completion scores for giving correct boots
 scoreboard objectives add frogger_completed_chainmail dummy
@@ -73,119 +67,17 @@ scoreboard objectives add frogger_3rd_iron dummy
 scoreboard objectives add frogger_2nd_gold dummy
 scoreboard objectives add frogger_1st_diamond dummy
 
-#Frogger Timer Scoreboards
-scoreboard objectives add frogger_timer_ticks dummy
-scoreboard objectives add frogger_timer_tenths dummy
-scoreboard objectives add frogger_timer_seconds dummy
-scoreboard objectives add frogger_timer_minutes dummy
-scoreboard objectives add frogger_timer_toggle dummy
-
-scoreboard objectives add frogger_timer_comparison dummy
-
-#Frogger Best Time Scoreboards
-
-scoreboard objectives add frogger_best_time_ticks dummy
-scoreboard objectives add frogger_best_time_tenths dummy
-scoreboard objectives add frogger_best_time_seconds dummy
-scoreboard objectives add frogger_best_time_minutes dummy
-
-scoreboard objectives add frogger_best_time_comparison dummy
-scoreboard players set @a frogger_best_time_comparison 2147483647
-
-#Frogger Top Time Comparisons
-scoreboard objectives add frogger_top_comparison_1 dummy
-scoreboard objectives add frogger_top_comparison_2 dummy
-scoreboard objectives add frogger_top_comparison_3 dummy
-scoreboard objectives add frogger_top_comparison_4 dummy
-scoreboard objectives add frogger_top_comparison_5 dummy
-scoreboard players set time_comparison frogger_top_comparison_1 2147483647
-scoreboard players set time_comparison frogger_top_comparison_2 2147483647
-scoreboard players set time_comparison frogger_top_comparison_3 2147483647
-scoreboard players set time_comparison frogger_top_comparison_4 2147483647
-scoreboard players set time_comparison frogger_top_comparison_5 2147483647
-
-#Frogger countdown timer objective for start
-scoreboard objectives add frogger_countdown_timer dummy
-
 #Sculking completion scores for giving correct boots
 scoreboard objectives add sculking_completed_chainmail dummy
 scoreboard objectives add sculking_3rd_iron dummy
 scoreboard objectives add sculking_2nd_gold dummy
 scoreboard objectives add sculking_1st_diamond dummy
 
-#Sculking Timer Scoreboards
-scoreboard objectives add sculking_timer_ticks dummy
-scoreboard objectives add sculking_timer_tenths dummy
-scoreboard objectives add sculking_timer_seconds dummy
-scoreboard objectives add sculking_timer_minutes dummy
-scoreboard objectives add sculking_timer_toggle dummy
-
-scoreboard objectives add sculking_timer_comparison dummy
-
-#Sculking Best Time Scoreboards
-
-scoreboard objectives add sculking_best_time_ticks dummy
-scoreboard objectives add sculking_best_time_tenths dummy
-scoreboard objectives add sculking_best_time_seconds dummy
-scoreboard objectives add sculking_best_time_minutes dummy
-
-scoreboard objectives add sculking_best_time_comparison dummy
-scoreboard players set @a sculking_best_time_comparison 2147483647
-
-#Sculking Top Time Comparisons
-scoreboard objectives add sculking_top_comparison_1 dummy
-scoreboard objectives add sculking_top_comparison_2 dummy
-scoreboard objectives add sculking_top_comparison_3 dummy
-scoreboard objectives add sculking_top_comparison_4 dummy
-scoreboard objectives add sculking_top_comparison_5 dummy
-scoreboard players set time_comparison sculking_top_comparison_1 2147483647
-scoreboard players set time_comparison sculking_top_comparison_2 2147483647
-scoreboard players set time_comparison sculking_top_comparison_3 2147483647
-scoreboard players set time_comparison sculking_top_comparison_4 2147483647
-scoreboard players set time_comparison sculking_top_comparison_5 2147483647
-
-#Sculking countdown timer objective for start
-scoreboard objectives add sculking_countdown_timer dummy
-
 #Undertow completion scores for giving correct boots
 scoreboard objectives add undertow_completed_chainmail dummy
 scoreboard objectives add undertow_3rd_iron dummy
 scoreboard objectives add undertow_2nd_gold dummy
 scoreboard objectives add undertow_1st_diamond dummy
-
-#Undertow Timer Scoreboards
-scoreboard objectives add undertow_timer_ticks dummy
-scoreboard objectives add undertow_timer_tenths dummy
-scoreboard objectives add undertow_timer_seconds dummy
-scoreboard objectives add undertow_timer_minutes dummy
-scoreboard objectives add undertow_timer_toggle dummy
-
-scoreboard objectives add undertow_timer_comparison dummy
-
-#Undertow Best Time Scoreboards
-
-scoreboard objectives add undertow_best_time_ticks dummy
-scoreboard objectives add undertow_best_time_tenths dummy
-scoreboard objectives add undertow_best_time_seconds dummy
-scoreboard objectives add undertow_best_time_minutes dummy
-
-scoreboard objectives add undertow_best_time_comparison dummy
-scoreboard players set @a undertow_best_time_comparison 2147483647
-
-#Undertow Top Time Comparisons
-scoreboard objectives add undertow_top_comparison_1 dummy
-scoreboard objectives add undertow_top_comparison_2 dummy
-scoreboard objectives add undertow_top_comparison_3 dummy
-scoreboard objectives add undertow_top_comparison_4 dummy
-scoreboard objectives add undertow_top_comparison_5 dummy
-scoreboard players set time_comparison undertow_top_comparison_1 2147483647
-scoreboard players set time_comparison undertow_top_comparison_2 2147483647
-scoreboard players set time_comparison undertow_top_comparison_3 2147483647
-scoreboard players set time_comparison undertow_top_comparison_4 2147483647
-scoreboard players set time_comparison undertow_top_comparison_5 2147483647
-
-#Undertow countdown timer objective for start
-scoreboard objectives add undertow_countdown_timer dummy
 
 #Checkpoints
 scoreboard objectives add checkpoint dummy
@@ -194,9 +86,6 @@ scoreboard objectives add checkpoint_course dummy
 
 #Death
 scoreboard objectives add deaths deathCount
-
-#Initial Login Check Score
-scoreboard objectives add has_logged_in dummy
 
 ##Teams
 team add Visible

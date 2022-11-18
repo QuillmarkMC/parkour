@@ -18,4 +18,7 @@ execute store result score @s checkpoint_course run data get storage park:checkp
 #set checkpoint rotation
 data modify entity @s data.Rotation set from storage park:checkpoint_constructor Rotation
 
+#set if end checkpoint
+execute if data storage park:checkpoint_constructor {Finish:true} run tag @s add Finish
+
 tag @s remove CPInit

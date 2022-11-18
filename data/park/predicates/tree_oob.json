@@ -1,0 +1,23 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "stepping_on": {
+      "block": {
+        "blocks": [
+          "minecraft:oak_leaves",
+          "minecraft:spruce_leaves",
+          "minecraft:jungle_leaves",
+          "minecraft:dark_oak_leaves",
+          "minecraft:azalea_leaves",
+          "minecraft:flowering_azalea_leaves",
+          "minecraft:jungle_wood",
+          "minecraft:oak_wood",
+          "minecraft:mangrove_wood",
+          "minecraft:stripped_dark_oak_wood",
+          "minecraft:stripped_spruce_wood"
+        ]
+      }
+    }
+  }
+}

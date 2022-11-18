@@ -8,3 +8,5 @@ execute as @e[type=marker,tag=CPInit] run function park:game/checkpoints/summon_
 
 data modify storage park:checkpoint_constructor Number set value -1
 data modify storage park:checkpoint_constructor Course set value -1
+data modify storage park:checkpoint_constructor Rotation set value 0
+data modify storage park:checkpoint_constructor Finish set value false
