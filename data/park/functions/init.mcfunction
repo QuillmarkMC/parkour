@@ -66,6 +66,15 @@ scoreboard objectives add deaths deathCount
 #Initial Login Check Score
 scoreboard objectives add has_logged_in dummy
 
+#Disable Courses
+scoreboard objectives add disabled dummy
+execute unless score $descent disabled matches 0.. run scoreboard players set $descent disabled 0
+execute unless score $sculking disabled matches 0.. run scoreboard players set $sculking disabled 0
+execute unless score $undertow disabled matches 0.. run scoreboard players set $undertow disabled 0
+execute unless score $frogger disabled matches 0.. run scoreboard players set $frogger disabled 0
+execute unless score $spectrum disabled matches 0.. run scoreboard players set $spectrum disabled 0
+execute unless score $frozen_hell disabled matches 0.. run scoreboard players set $frozen_hell disabled 0
+
 #Set Default Scores (N/A - **:**.*) THIS SHOULD ALMOST DEFINITELY NOT BE IN INIT
 #clone -646 -1 -6 -643 3 -6 -656 -1 -6
 #clone -646 -1 -6 -643 3 -6 -656 -1 -16
