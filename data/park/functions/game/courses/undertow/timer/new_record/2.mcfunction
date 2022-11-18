@@ -1,9 +1,9 @@
 #4th -> 5th
-execute unless score @s player_id = $4 undertow_record_ids run function park:game/courses/undertow/timer/new_record/move_down/4
+execute unless score @s player_id = $2 undertow_record_ids unless score @s player_id = $3 undertow_record_ids unless score @s player_id = $1 undertow_record_ids run function park:game/courses/undertow/timer/new_record/move_down/4
 #3rd -> 4th
-execute unless score @s player_id = $4 undertow_record_ids unless score @s player_id = $3 undertow_record_ids run function park:game/courses/undertow/timer/new_record/move_down/3
+execute unless score @s player_id = $2 undertow_record_ids unless score @s player_id = $3 undertow_record_ids run function park:game/courses/undertow/timer/new_record/move_down/3
 #2nd -> 3rd
-execute unless score @s player_id = $4 undertow_record_ids unless score @s player_id = $3 undertow_record_ids unless score @s player_id = $2 undertow_record_ids run function park:game/courses/undertow/timer/new_record/move_down/2
+execute unless score @s player_id = $2 undertow_record_ids run function park:game/courses/undertow/timer/new_record/move_down/2
 
 #Set second
 execute at @s run setblock -656 2 -36 oak_wall_sign[facing=south]{Text1:'{"selector":"@p"}'} destroy

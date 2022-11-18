@@ -1,11 +1,11 @@
 #4th -> 5th
-execute unless score @s player_id = $4 sculking_record_ids run function park:game/courses/sculking/timer/new_record/move_down/4
+execute unless score @s player_id = $1 sculking_record_ids unless score @s player_id = $2 sculking_record_ids unless score @s player_id = $3 sculking_record_ids unless score @s player_id = $4 sculking_record_ids run function park:game/courses/sculking/timer/new_record/move_down/4
 #3rd -> 4th
-execute unless score @s player_id = $4 sculking_record_ids unless score @s player_id = $3 sculking_record_ids run function park:game/courses/sculking/timer/new_record/move_down/3
+execute unless score @s player_id = $1 sculking_record_ids unless score @s player_id = $2 sculking_record_ids unless score @s player_id = $3 sculking_record_ids run function park:game/courses/sculking/timer/new_record/move_down/3
 #2nd -> 3rd
-execute unless score @s player_id = $4 sculking_record_ids unless score @s player_id = $3 sculking_record_ids unless score @s player_id = $2 sculking_record_ids run function park:game/courses/sculking/timer/new_record/move_down/2
+execute unless score @s player_id = $1 sculking_record_ids unless score @s player_id = $2 sculking_record_ids run function park:game/courses/sculking/timer/new_record/move_down/2
 #1st -> 2nd
-execute unless score @s player_id = $4 sculking_record_ids unless score @s player_id = $3 sculking_record_ids unless score @s player_id = $2 sculking_record_ids unless score @s player_id = $1 sculking_record_ids run function park:game/courses/sculking/timer/new_record/move_down/1
+execute unless score @s player_id = $1 sculking_record_ids run function park:game/courses/sculking/timer/new_record/move_down/1
 
 #Set first
 execute at @s run setblock -656 3 -26 oak_wall_sign[facing=south]{Text1:'{"selector":"@p"}'} destroy
