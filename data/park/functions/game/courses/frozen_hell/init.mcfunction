@@ -1,5 +1,5 @@
 #Checkpoints
-kill @e[tag=Checkpoint,tag=Descent]
+kill @e[tag=Checkpoint,tag=Frozen_Hell]
 
 #Start
 data modify storage park:checkpoint_constructor Number set value 0
