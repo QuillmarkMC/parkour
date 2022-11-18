@@ -55,30 +55,6 @@ scoreboard objectives add frogger_record_ids dummy
 scoreboard objectives add frozen_hell_record dummy
 scoreboard objectives add frozen_hell_record_ids dummy
 
-#Descent completion scores for giving correct boots
-scoreboard objectives add descent_completed_chainmail dummy
-scoreboard objectives add descent_3rd_iron dummy
-scoreboard objectives add descent_2nd_gold dummy
-scoreboard objectives add descent_1st_diamond dummy
-
-#Frogger completion scores for giving correct boots
-scoreboard objectives add frogger_completed_chainmail dummy
-scoreboard objectives add frogger_3rd_iron dummy
-scoreboard objectives add frogger_2nd_gold dummy
-scoreboard objectives add frogger_1st_diamond dummy
-
-#Sculking completion scores for giving correct boots
-scoreboard objectives add sculking_completed_chainmail dummy
-scoreboard objectives add sculking_3rd_iron dummy
-scoreboard objectives add sculking_2nd_gold dummy
-scoreboard objectives add sculking_1st_diamond dummy
-
-#Undertow completion scores for giving correct boots
-scoreboard objectives add undertow_completed_chainmail dummy
-scoreboard objectives add undertow_3rd_iron dummy
-scoreboard objectives add undertow_2nd_gold dummy
-scoreboard objectives add undertow_1st_diamond dummy
-
 #Checkpoints
 scoreboard objectives add checkpoint dummy
 scoreboard objectives add checkpoint_order dummy
