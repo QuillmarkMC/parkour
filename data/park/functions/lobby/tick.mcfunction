@@ -10,5 +10,12 @@ execute as @a[scores={gamestate=0}] run effect clear @s jump_boost
 execute as @a[scores={gamestate=0}] run effect clear @s darkness
 execute as @a[scores={gamestate=0}] run effect clear @s night_vision
 
+#Your best score displays when near portal
+execute as @a[x=-662,y=59,z=-28,dx=24,dy=15,dz=-10] if score @s descent_best_time_comparison matches ..2147483646 run title @s actionbar [{"text":"Descent PB: "},{"score":{"name":"*","objective":"descent_best_time_minutes"}},{"text":":"},{"score":{"name":"*","objective":"descent_best_time_seconds"}},{"text":"."},{"score":{"name":"*","objective":"descent_best_time_tenths"}}]
+execute as @a[x=-628,y=59,z=-33,dx=30,dy=15,dz=30] if score @s sculking_best_time_comparison matches ..2147483646 run title @s actionbar [{"text":"Sculking PB: "},{"score":{"name":"*","objective":"sculking_best_time_minutes"}},{"text":":"},{"score":{"name":"*","objective":"sculking_best_time_seconds"}},{"text":"."},{"score":{"name":"*","objective":"sculking_best_time_tenths"}}]
+execute as @a[x=-611,y=59,z=4,dx=30,dy=15,dz=16] if score @s undertow_best_time_comparison matches ..2147483646 run title @s actionbar [{"text":"Undertow PB: "},{"score":{"name":"*","objective":"undertow_best_time_minutes"}},{"text":":"},{"score":{"name":"*","objective":"undertow_best_time_seconds"}},{"text":"."},{"score":{"name":"*","objective":"undertow_best_time_tenths"}}]
+execute as @a[x=-633,y=59,z=25,dx=32,dy=15,dz=30] if score @s frogger_best_time_comparison matches ..2147483646 run title @s actionbar [{"text":"Frogger PB: "},{"score":{"name":"*","objective":"frogger_best_time_minutes"}},{"text":":"},{"score":{"name":"*","objective":"frogger_best_time_seconds"}},{"text":"."},{"score":{"name":"*","objective":"frogger_best_time_tenths"}}]
+execute as @a[x=-672,y=59,z=33,dx=-33,dy=15,dz=-30] if score @s frogger_best_time_comparison matches ..2147483646 run title @s actionbar [{"text":"Frogger PB: "},{"score":{"name":"*","objective":"frogger_best_time_minutes"}},{"text":":"},{"score":{"name":"*","objective":"frogger_best_time_seconds"}},{"text":"."},{"score":{"name":"*","objective":"frogger_best_time_tenths"}}]
+
 #Warp to Levels
 function park:lobby/levelstarts/warp
