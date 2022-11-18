@@ -9,3 +9,4 @@ execute if score @s checkpoint matches 3 run particle block_marker lime_shulker_
 execute if score @s checkpoint matches 4 run particle block_marker green_shulker_box ~ ~3 ~ 0 0 0 1 1 force @s
 execute if score @s checkpoint matches 5 run particle block_marker cyan_shulker_box ~ ~3 ~ 0 0 0 1 1 force @s
 execute if score @s checkpoint matches 6 run particle block_marker blue_shulker_box ~ ~3 ~ 0 0 0 1 1 force @s
+execute if score @s checkpoint matches 7 run particle block_marker light_blue_shulker_box ~ ~3 ~ 0 0 0 1 1 force @s
