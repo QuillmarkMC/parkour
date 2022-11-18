@@ -200,3 +200,15 @@ forceload add -1065 2046
 forceload add -1026 2054
 forceload add -1021 2055
 forceload add -1036 2041
+
+#Spectrum
+
+#Frozen Hell
+forceload add 998 252
+forceload add 989 268
+forceload add 984 292
+forceload add 971 310
+forceload add 974 349
+forceload add 1026 372
+forceload add 1043 342
+forceload add 1020 333
