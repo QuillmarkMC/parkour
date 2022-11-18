@@ -213,6 +213,9 @@ clone -646 -1 -6 -643 3 -6 -656 -1 -46
 #summon armor_stand -652.5 60.6 -37.5 {CustomNameVisible:1b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["descent_as","descent_as_4"]}
 #summon armor_stand -652.5 60.2 -37.5 {CustomNameVisible:1b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["descent_as","descent_as_5"]}
 
+#Levitation Boost Time
+scoreboard objectives add levitation_boost_time dummy
+
 ##Teams
 team add Visible
 team modify Visible collisionRule never
