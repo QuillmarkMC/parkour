@@ -16,6 +16,8 @@ execute unless entity @a[scores={gamestate=3}] run schedule clear park:game/cour
 execute if entity @a[scores={gamestate=4}] run schedule function park:game/courses/frogger/tick 1t replace
 execute unless entity @a[scores={gamestate=4}] run schedule clear park:game/courses/frogger/tick
 
-#Parkour5
+#This is where I'd put Parkour5! IF I HAD ONE!
 
-#Parkour6
+#Frozen Hell
+execute if entity @a[scores={gamestate=6}] run schedule function park:game/courses/frozen_hell/tick 1t replace
+execute unless entity @a[scores={gamestate=6}] run schedule clear park:game/courses/frozen_hell/tick

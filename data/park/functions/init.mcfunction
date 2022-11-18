@@ -87,17 +87,15 @@ scoreboard objectives add checkpoint_course dummy
 #Death
 scoreboard objectives add deaths deathCount
 
-<<<<<<< HEAD
-=======
 #Initial Login Check Score
 scoreboard objectives add has_logged_in dummy
 
-#Set Default Scores (N/A - **:**.*)
-clone -646 -1 -6 -643 3 -6 -656 -1 -6
-clone -646 -1 -6 -643 3 -6 -656 -1 -16
-clone -646 -1 -6 -643 3 -6 -656 -1 -26
-clone -646 -1 -6 -643 3 -6 -656 -1 -36
-clone -646 -1 -6 -643 3 -6 -656 -1 -46
+#Set Default Scores (N/A - **:**.*) THIS SHOULD ALMOST DEFINITELY NOT BE IN INIT
+#clone -646 -1 -6 -643 3 -6 -656 -1 -6
+#clone -646 -1 -6 -643 3 -6 -656 -1 -16
+#clone -646 -1 -6 -643 3 -6 -656 -1 -26
+#clone -646 -1 -6 -643 3 -6 -656 -1 -36
+#clone -646 -1 -6 -643 3 -6 -656 -1 -46
 
 #Reset Leaderboard Armor Stands (Disabled)
 #kill @e[tag=descent_as]
@@ -110,7 +108,6 @@ clone -646 -1 -6 -643 3 -6 -656 -1 -46
 #Levitation Boost Time
 scoreboard objectives add levitation_boost_time dummy
 
->>>>>>> b7d5cc96fd4bb6b00bcb45df13159bc673bc312d
 ##Teams
 team add Visible
 team modify Visible collisionRule never
