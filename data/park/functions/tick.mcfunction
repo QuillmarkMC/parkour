@@ -30,12 +30,6 @@ execute as @a unless score @s has_logged_in matches 1 run scoreboard players set
 execute as @a unless score @s has_logged_in matches 1 run scoreboard players set @s frozen_hell_best_time_comparison 2147483647
 scoreboard players set @a has_logged_in 1
 
-#Sculking Levitation
-execute as @a if block ~ ~-0.1 ~ minecraft:lime_concrete_powder run effect give @s minecraft:levitation 1 90 true
-execute as @a[nbt={ActiveEffects:[{Id:25}]}] run scoreboard players add @s levitation_boost_time 1
-execute as @a if score @s levitation_boost_time matches 2.. run effect clear @s
-execute as @a if score @s levitation_boost_time matches 2.. run scoreboard players set @s levitation_boost_time 0
-
 #Kill Items
 kill @e[type=item]
 
