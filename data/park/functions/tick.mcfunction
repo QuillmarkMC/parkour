@@ -26,6 +26,9 @@ execute as @a if score @s gamestate matches 1..6 at @s if predicate park:below_v
 #Kill Items
 kill @e[type=item]
 
+#Player IDs
+execute as @a unless score @s player_id matches 1.. run function park:lobby/new_id
+
 #Persistant Effects
 effect give @a saturation 999999 255 true
 effect give @a[scores={gamestate=1..6}] invisibility 4 0 true
