@@ -1,3 +1,8 @@
+#Ghast
+execute as @e[tag=FHGhast] at @s run tp @s ~ ~-64 ~
+kill @e[tag=FHGhast]
+summon ghast 995.0 173.95 379.0 {Tags:["FHGhast"],Silent:1b,Invulnerable:1b,NoAI:1b}
+
 #Checkpoints
 kill @e[tag=Checkpoint,tag=Frozen_Hell]
 
