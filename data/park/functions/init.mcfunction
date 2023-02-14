@@ -42,6 +42,7 @@ scoreboard objectives add sculking_pb dummy
 scoreboard objectives add undertow_pb dummy
 scoreboard objectives add frogger_pb dummy
 scoreboard objectives add frozen_hell_pb dummy
+scoreboard objectives add spectrum_pb dummy
 
 #Top Times
 scoreboard objectives add descent_record dummy
@@ -54,6 +55,8 @@ scoreboard objectives add frogger_record dummy
 scoreboard objectives add frogger_record_ids dummy
 scoreboard objectives add frozen_hell_record dummy
 scoreboard objectives add frozen_hell_record_ids dummy
+scoreboard objectives add spectrum_record dummy
+scoreboard objectives add spectrum_record_ids dummy
 
 #Checkpoints
 scoreboard objectives add checkpoint dummy
