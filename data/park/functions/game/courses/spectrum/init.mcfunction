@@ -5,7 +5,7 @@ kill @e[tag=Checkpoint,tag=Spectrum]
 data modify storage park:checkpoint_constructor Number set value 0
 data modify storage park:checkpoint_constructor Course set value 5
 data modify storage park:checkpoint_constructor Rotation set value 0.0f
-execute positioned -2018.5 110 2004.5 run function park:game/checkpoints/summon
+execute positioned 2018.5 110 2004.5 run function park:game/checkpoints/summon
 
 #1
 data modify storage park:checkpoint_constructor Number set value 1
