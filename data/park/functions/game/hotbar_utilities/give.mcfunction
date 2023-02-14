@@ -1,5 +1,6 @@
 ##This function will be used to give the player their hotbar untilities
 
+item replace entity @s hotbar.4 with carrot_on_a_stick{display:{Name:'{"text":"Toggle Death Effect","italic":false}'},CustomModelData:5,death:1} 1
 item replace entity @s hotbar.5 with carrot_on_a_stick{display:{Name:'{"text":"Change Visibility","italic":false}'},CustomModelData:4,team:1} 1
 item replace entity @s hotbar.6 with carrot_on_a_stick{display:{Name:'{"text":"Restart from Checkpoint","italic":false}'},CustomModelData:3,checkpoint:1} 1
 item replace entity @s hotbar.7 with carrot_on_a_stick{display:{Name:'{"text":"Restart","italic":false}'},CustomModelData:2,restart:1} 1

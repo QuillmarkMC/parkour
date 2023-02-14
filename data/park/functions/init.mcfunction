@@ -190,6 +190,17 @@ forceload add -1021 2055
 forceload add -1036 2041
 
 #Spectrum
+forceload add 2018 2004
+forceload add 2019 2032
+forceload add 2013 2057
+forceload add 2018 2097
+forceload add 1986 2106
+forceload add 2053 2137
+forceload add 2093 2149
+forceload add 2132 2118
+forceload add 2177 2061
+forceload add 2244 2061
+forceload add 2291 2018
 
 #Frozen Hell
 forceload add 998 252
@@ -200,3 +211,4 @@ forceload add 974 349
 forceload add 1026 372
 forceload add 1043 342
 forceload add 1020 333
+
