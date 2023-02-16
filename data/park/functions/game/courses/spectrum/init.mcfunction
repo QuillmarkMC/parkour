@@ -68,4 +68,5 @@ data modify storage park:checkpoint_constructor Rotation set value 180.0f
 data modify storage park:checkpoint_constructor Finish set value true
 execute positioned 2291.5 123 2018.5 run function park:game/checkpoints/summon
 
-
+#particle timer scoreboard
+scoreboard objectives add spectrum_particle_timer dummy

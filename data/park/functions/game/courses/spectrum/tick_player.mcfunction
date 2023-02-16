@@ -11,3 +11,8 @@ execute at @s if block ~ ~-1 ~ minecraft:red_stained_glass run effect give @s mi
 execute at @s if block ~ ~-0.1 ~ minecraft:white_stained_glass run effect clear @s minecraft:slow_falling
 execute at @s if block ~ ~-0.1 ~ minecraft:white_stained_glass run effect clear @s minecraft:speed
 execute at @s if block ~ ~-0.1 ~ minecraft:white_stained_glass run effect clear @s minecraft:jump_boost
+
+#particle timer stuff
+
+execute at @s if score @s spectrum_particle_timer matches 75.. run function park:game/courses/spectrum/effect_particles
+scoreboard players add @s spectrum_particle_timer 1
