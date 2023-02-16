@@ -14,5 +14,5 @@ execute at @s if block ~ ~-0.1 ~ minecraft:white_stained_glass run effect clear 
 
 #particle timer stuff
 
-execute at @s if score @s spectrum_particle_timer matches 75.. run function park:game/courses/spectrum/effect_particles
+execute at @s if score @s spectrum_particle_timer matches 40.. run function park:game/courses/spectrum/effect_particles
 scoreboard players add @s spectrum_particle_timer 1
