@@ -24,5 +24,5 @@ data modify storage park:ticks_to_time Ticks set from storage park:leaderboard_n
 function park:game/timer/ticks_to_time
 data modify storage park:leaderboard_print 5.time set from storage park:ticks_to_time Time
 
-tellraw @s [{"text":"NIGHTLIFE TOP TIMES","bold":true,"underlined":true,"color":"black"},{"text":" -","bold":true}]
+tellraw @s [{"text":"NIGHTLIFE TOP TIMES","bold":true,"underlined":true,"color":"black"},{"text":" -","bold":true,"underlined":false}]
 function park:game/leaderboard/print/current
