@@ -25,43 +25,43 @@ data modify storage park:checkpoint_constructor Rotation set value 20.0f
 execute positioned 984.5 167 292.5 run function park:game/checkpoints/summon
 
 #3
-data modify storage park:checkpoint_constructor Number set value 3
-data modify storage park:checkpoint_constructor Course set value 6
-data modify storage park:checkpoint_constructor Rotation set value -45.0f
-execute positioned 971.5 171 310.5 run function park:game/checkpoints/summon
+#data modify storage park:checkpoint_constructor Number set value 3
+#data modify storage park:checkpoint_constructor Course set value 6
+#data modify storage park:checkpoint_constructor Rotation set value -45.0f
+#execute positioned 971.5 171 310.5 run function park:game/checkpoints/summon
 
-#4
-data modify storage park:checkpoint_constructor Number set value 4
+#3
+data modify storage park:checkpoint_constructor Number set value 3
 data modify storage park:checkpoint_constructor Course set value 6
 data modify storage park:checkpoint_constructor Rotation set value 0.0f
 execute positioned 974.5 179 349.5 run function park:game/checkpoints/summon
 
-#5
-data modify storage park:checkpoint_constructor Number set value 5
+#4
+data modify storage park:checkpoint_constructor Number set value 4
 data modify storage park:checkpoint_constructor Course set value 6
 data modify storage park:checkpoint_constructor Rotation set value -155.0f
 execute positioned 1026.5 171 372.5 run function park:game/checkpoints/summon
 
-#6
-data modify storage park:checkpoint_constructor Number set value 6
+#5
+data modify storage park:checkpoint_constructor Number set value 5
 data modify storage park:checkpoint_constructor Course set value 6
 data modify storage park:checkpoint_constructor Rotation set value 180.0f
 execute positioned 1043.5 174 342.5 run function park:game/checkpoints/summon
 
-#7
-data modify storage park:checkpoint_constructor Number set value 7
+#6
+data modify storage park:checkpoint_constructor Number set value 6
 data modify storage park:checkpoint_constructor Course set value 6
 data modify storage park:checkpoint_constructor Rotation set value 90.0f
 execute positioned 1020.5 178 333.5 run function park:game/checkpoints/summon
 
-#8
-data modify storage park:checkpoint_constructor Number set value 8
+#7
+data modify storage park:checkpoint_constructor Number set value 7
 data modify storage park:checkpoint_constructor Course set value 6
 data modify storage park:checkpoint_constructor Rotation set value -90.0f
 execute positioned 1011.5 145 332.0 run function park:game/checkpoints/summon
 
-#9
-data modify storage park:checkpoint_constructor Number set value 9
+#8
+data modify storage park:checkpoint_constructor Number set value 8
 data modify storage park:checkpoint_constructor Course set value 6
 data modify storage park:checkpoint_constructor Rotation set value 0.0f
 data modify storage park:checkpoint_constructor Finish set value true
