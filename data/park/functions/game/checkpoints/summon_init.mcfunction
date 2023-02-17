@@ -13,7 +13,7 @@ execute if data storage park:checkpoint_constructor {Course:1} run tag @s add De
 execute if data storage park:checkpoint_constructor {Course:2} run tag @s add Sculking
 execute if data storage park:checkpoint_constructor {Course:3} run tag @s add Undertow
 execute if data storage park:checkpoint_constructor {Course:4} run tag @s add Frogger
-execute if data storage park:checkpoint_constructor {Course:5} run tag @s add Spectrum
+execute if data storage park:checkpoint_constructor {Course:5} run tag @s add Nightlife
 execute if data storage park:checkpoint_constructor {Course:6} run tag @s add Frozen_Hell
 execute store result score @s checkpoint_course run data get storage park:checkpoint_constructor Course
 

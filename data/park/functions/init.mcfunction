@@ -12,7 +12,7 @@ scoreboard players set $descent gamestate 1
 scoreboard players set $sculking gamestate 2
 scoreboard players set $undertow gamestate 3
 scoreboard players set $frogger gamestate 4
-scoreboard players set $spectrum gamestate 5
+scoreboard players set $nightlife gamestate 5
 scoreboard players set $frozen_hell gamestate 6
 
 #Carrot on a stick click scoreboard
@@ -42,21 +42,11 @@ scoreboard objectives add sculking_pb dummy
 scoreboard objectives add undertow_pb dummy
 scoreboard objectives add frogger_pb dummy
 scoreboard objectives add frozen_hell_pb dummy
-scoreboard objectives add spectrum_pb dummy
+scoreboard objectives add nightlife_pb dummy
 
-#Top Times
-scoreboard objectives add descent_record dummy
-scoreboard objectives add descent_record_ids dummy
-scoreboard objectives add sculking_record dummy
-scoreboard objectives add sculking_record_ids dummy
-scoreboard objectives add undertow_record dummy
-scoreboard objectives add undertow_record_ids dummy
-scoreboard objectives add frogger_record dummy
-scoreboard objectives add frogger_record_ids dummy
-scoreboard objectives add frozen_hell_record dummy
-scoreboard objectives add frozen_hell_record_ids dummy
-scoreboard objectives add spectrum_record dummy
-scoreboard objectives add spectrum_record_ids dummy
+#Comparison Leaderboards
+scoreboard objectives add leaderboard_temp_records dummy
+scoreboard objectives add leaderboard_temp_record_ids dummy
 
 #Checkpoints
 scoreboard objectives add checkpoint dummy
@@ -75,7 +65,7 @@ execute unless score $descent disabled matches 0.. run scoreboard players set $d
 execute unless score $sculking disabled matches 0.. run scoreboard players set $sculking disabled 0
 execute unless score $undertow disabled matches 0.. run scoreboard players set $undertow disabled 0
 execute unless score $frogger disabled matches 0.. run scoreboard players set $frogger disabled 0
-execute unless score $spectrum disabled matches 0.. run scoreboard players set $spectrum disabled 0
+execute unless score nightlife disabled matches 0.. run scoreboard players set $nightlife disabled 0
 execute unless score $frozen_hell disabled matches 0.. run scoreboard players set $frozen_hell disabled 0
 
 #Set Default Scores (N/A - **:**.*) THIS SHOULD ALMOST DEFINITELY NOT BE IN INIT
@@ -95,6 +85,9 @@ execute unless score $frozen_hell disabled matches 0.. run scoreboard players se
 
 #Levitation Boost Time
 scoreboard objectives add levitation_boost_time dummy
+
+#Nightlife Particle Timer
+scoreboard objectives add nightlife_particle_timer dummy
 
 ##Teams
 team add Visible
@@ -152,6 +145,9 @@ gamerule spectatorsGenerateChunks true
 #gamerule sendCommandFeedback false
 
 #Force Loads
+#Lobby
+forceload add -641 -49 -656 -64
+
 #Descent
 forceload add -1085 1085
 forceload add -1085 1114
@@ -189,7 +185,7 @@ forceload add -1026 2054
 forceload add -1021 2055
 forceload add -1036 2041
 
-#Spectrum
+#Nightlife
 forceload add 2018 2004
 forceload add 2019 2032
 forceload add 2013 2057
