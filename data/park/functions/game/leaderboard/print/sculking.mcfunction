@@ -24,4 +24,5 @@ data modify storage park:ticks_to_time Ticks set from storage park:leaderboard_s
 function park:game/timer/ticks_to_time
 data modify storage park:leaderboard_print 5.time set from storage park:ticks_to_time Time
 
+tellraw @s [{"text":"SCULKING TOP TIMES","bold":true,"underlined":true,"color":"#0D5A88"},{"text":" -","bold":true}]
 function park:game/leaderboard/print/current

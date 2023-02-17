@@ -27,7 +27,7 @@ execute as @a if score @s gamestate matches 1..6 at @s if predicate park:below_v
 #Kill Items
 kill @e[type=item]
 
-#Player IDs
+#Player IDs (just in case)
 execute as @a unless score @s player_id matches 1.. run function park:lobby/new_id
 
 #Persistant Effects
