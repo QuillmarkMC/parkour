@@ -1,6 +1,6 @@
 #Runs anytime a player joins the game
 
-execute unless score @s player_id matches 1.. as @s run function park:lobby/new_id
+execute if entity @s[tag=!HasLoggedIn] run function park:lobby/login_init
 scoreboard players operation @s gamestate = $lobby gamestate
 tp @s -650 60 0 180 0
 spawnpoint @s -650 60 0 180
