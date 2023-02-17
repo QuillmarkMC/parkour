@@ -24,5 +24,5 @@ data modify storage park:ticks_to_time Ticks set from storage park:leaderboard_f
 function park:game/timer/ticks_to_time
 data modify storage park:leaderboard_print 5.time set from storage park:ticks_to_time Time
 
-tellraw @s [{"text":"FROZEN HELL TOP TIMES","bold":true,"underlined":true,"color":"#0086de"},{"text":" -","bold":true}]
+tellraw @s [{"text":"FROZEN HELL TOP TIMES","bold":true,"underlined":true,"color":"aqua"},{"text":" -","bold":true,"underlined":false}]
 function park:game/leaderboard/print/current
