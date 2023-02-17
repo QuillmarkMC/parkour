@@ -22,7 +22,7 @@ scoreboard players operation $math ticks_to_time /= $2 ticks_to_time
 execute store result storage park:ticks_to_time Time.Tenths int 1 run scoreboard players get $math ticks_to_time
 
 #For formatting style
-execute store result score $format ticks_to_time run data get storage park:ticks_to_time Time.Seconds 1
+#execute store result score $format ticks_to_time run data get storage park:ticks_to_time Time.Seconds 1
 
 #For max time formatting
 execute if score $total ticks_to_time matches 2147483647 run data modify storage park:ticks_to_time Time.Minutes set value "**"
