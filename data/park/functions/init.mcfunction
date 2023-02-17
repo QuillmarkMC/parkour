@@ -56,9 +56,6 @@ scoreboard objectives add checkpoint_course dummy
 #Death
 scoreboard objectives add deaths deathCount
 
-#Initial Login Check Score
-scoreboard objectives add has_logged_in dummy
-
 #Disable Courses
 scoreboard objectives add disabled dummy
 execute unless score $descent disabled matches 0.. run scoreboard players set $descent disabled 0
