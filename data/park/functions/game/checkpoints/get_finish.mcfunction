@@ -7,5 +7,6 @@ execute if score @s gamestate = $sculking gamestate run function park:game/cours
 execute if score @s gamestate = $undertow gamestate run function park:game/courses/undertow/timer/finish
 execute if score @s gamestate = $frogger gamestate run function park:game/courses/frogger/timer/finish
 execute if score @s gamestate = $frozen_hell gamestate run function park:game/courses/frozen_hell/timer/finish
+execute if score @s gamestate = $nightlife gamestate run function park:game/courses/nightlife/timer/finish
 
 function park:game/checkpoints/reset_player_fully
