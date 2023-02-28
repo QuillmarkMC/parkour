@@ -21,8 +21,8 @@ execute as @a[scores={click=1..},nbt={SelectedItem:{tag:{death:1}}}] run functio
 execute as @a if score @s click matches 1.. run scoreboard players set @s click 0
 
 #OoB Detection (i have moved this to main tick)
-execute as @a if score @s gamestate matches 1..6 at @s if block ~ ~ ~ minecraft:tripwire unless entity @s[team=Dev] run function park:game/checkpoints/reset_player
-execute as @a if score @s gamestate matches 1..6 at @s if predicate park:below_void unless entity @s[team=Dev] run function park:game/checkpoints/reset_player
+execute as @a if score @s gamestate matches 1..6 at @s if block ~ ~ ~ minecraft:tripwire unless entity @s[team=Dev] run function park:game/checkpoints/oob
+execute as @a if score @s gamestate matches 1..6 at @s if predicate park:below_void unless entity @s[team=Dev] run function park:game/checkpoints/oob
 
 #Kill Items
 kill @e[type=item]
