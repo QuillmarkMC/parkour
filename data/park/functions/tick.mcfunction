@@ -33,7 +33,7 @@ execute as @a unless score @s player_id matches 1.. run function park:lobby/new_
 #Persistant Effects
 effect give @a saturation 999999 255 true
 effect give @a weakness 999999 255 true
-effect give @a[scores={gamestate=1..6}] invisibility 4 0 true
+#effect give @a[scores={gamestate=1..6}] invisibility 4 0 true
 
 #Credits Room Warps
 execute as @a[x=-650,y=87,z=0,dx=0,dy=0,dz=0] run function park:lobby/credits_room/warp_in
