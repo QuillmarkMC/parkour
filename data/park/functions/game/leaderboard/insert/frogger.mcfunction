@@ -13,3 +13,5 @@ data modify storage park:leaderboard_frogger 2 set from storage park:leaderboard
 data modify storage park:leaderboard_frogger 3 set from storage park:leaderboard_temp 3
 data modify storage park:leaderboard_frogger 4 set from storage park:leaderboard_temp 4
 data modify storage park:leaderboard_frogger 5 set from storage park:leaderboard_temp 5
+
+function park:game/leaderboard/physical/update/frogger
