@@ -5,6 +5,6 @@ scoreboard players operation @s gamestate = $undertow gamestate
 spawnpoint @s -226 27 -979 90
 execute store result storage park:ticks_to_time Ticks int 1 run scoreboard players get @s undertow_pb
 function park:game/timer/ticks_to_time
-tellraw @s [{"text":""},{"text":"YOUR UNDERTOW PERSONAL BEST:","bold":true,"underlined":true,"color":"green"},{"text":" "},{"storage":"park:ticks_to_time","nbt":"Time.Minutes"},{"text":":"},{"storage":"park:ticks_to_time","nbt":"Time.SecsZero"},{"storage":"park:ticks_to_time","nbt":"Time.Seconds"},{"text":"."},{"storage":"park:ticks_to_time","nbt":"Time.Tenths"}]
+tellraw @s [{"text":""},{"text":"YOUR ","bold":true,"underlined":true,"color":"green"},{"text":"UNDERTOW","bold":true,"underlined":true,"color":"#FFDF92"},{"text":" PERSONAL BEST:","bold":true,"underlined":true,"color":"green"},{"text":" "},{"storage":"park:ticks_to_time","nbt":"Time.Minutes"},{"text":":"},{"storage":"park:ticks_to_time","nbt":"Time.SecsZero"},{"storage":"park:ticks_to_time","nbt":"Time.Seconds"},{"text":"."},{"storage":"park:ticks_to_time","nbt":"Time.Tenths"}]
 function park:game/checkpoints/reset_player_fully
 function park:game/update_tick
