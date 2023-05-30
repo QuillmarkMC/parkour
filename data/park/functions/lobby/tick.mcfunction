@@ -19,12 +19,12 @@ execute as @a[x=-633,y=59,z=25,dx=32,dy=15,dz=30] if score @s frogger_best_time_
 execute as @a[x=-672,y=59,z=33,dx=-33,dy=15,dz=-30] if score @s frogger_best_time_comparison matches ..2147483646 run title @s actionbar [{"text":"Frogger PB: "},{"score":{"name":"*","objective":"frogger_best_time_minutes"}},{"text":":"},{"score":{"name":"*","objective":"frogger_best_time_seconds"}},{"text":"."},{"score":{"name":"*","objective":"frogger_best_time_tenths"}}]
 
 #Best Time Buttons
-execute if block -653 60 -38 #buttons[powered=true] run function park:lobby/best_time_buttons/descent
-execute if block -618 60 -23 #buttons[powered=true] run function park:lobby/best_time_buttons/sculking
-execute if block -615 60 19 #buttons[powered=true] run function park:lobby/best_time_buttons/undertow
-execute if block -647 60 38 #buttons[powered=true] run function park:lobby/best_time_buttons/frogger
-execute if block -682 60 23 #buttons[powered=true] run function park:lobby/best_time_buttons/frozen_hell
-execute if block -685 60 -19 #buttons[powered=true] run function park:lobby/best_time_buttons/nightlife
+# execute if block -653 60 -38 #buttons[powered=true] run function park:lobby/best_time_buttons/descent
+# execute if block -618 60 -23 #buttons[powered=true] run function park:lobby/best_time_buttons/sculking
+# execute if block -615 60 19 #buttons[powered=true] run function park:lobby/best_time_buttons/undertow
+# execute if block -647 60 38 #buttons[powered=true] run function park:lobby/best_time_buttons/frogger
+# execute if block -682 60 23 #buttons[powered=true] run function park:lobby/best_time_buttons/frozen_hell
+# execute if block -685 60 -19 #buttons[powered=true] run function park:lobby/best_time_buttons/nightlife
 
 #Warp to Levels
 function park:lobby/levelstarts/warp
