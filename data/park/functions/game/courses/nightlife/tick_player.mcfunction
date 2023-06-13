@@ -8,7 +8,7 @@ execute at @s if block ~ ~-1 ~ minecraft:light_blue_stained_glass run effect giv
 execute at @s if block ~ ~-1 ~ minecraft:lime_stained_glass run effect give @s minecraft:jump_boost 1 2 true
 execute at @s if block ~ ~-1 ~ minecraft:blue_stained_glass run effect give @s minecraft:speed 2 3 true
 execute at @s if block ~ ~-1 ~ minecraft:red_stained_glass run effect give @s minecraft:slow_falling 3 1 true
-execute at @s if block ~ ~-0.1 ~ minecraft:white_stained_glass run effect clear @s minecraft:slow_falling
+execute at @s if block ~ ~-0.1 ~ minecraft:white_stained_glass run function park:game/courses/nightlife/clear_glass_effects
 
 #Particle timer stuff
 execute at @s if score @s nightlife_particle_timer matches 40.. run function park:game/courses/nightlife/effect_particles
