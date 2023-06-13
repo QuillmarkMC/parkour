@@ -13,3 +13,5 @@ data modify storage park:leaderboard_sculking 2 set from storage park:leaderboar
 data modify storage park:leaderboard_sculking 3 set from storage park:leaderboard_temp 3
 data modify storage park:leaderboard_sculking 4 set from storage park:leaderboard_temp 4
 data modify storage park:leaderboard_sculking 5 set from storage park:leaderboard_temp 5
+
+function park:game/leaderboard/physical/update/sculking

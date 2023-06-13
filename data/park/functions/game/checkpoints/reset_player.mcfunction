@@ -1,3 +1,6 @@
+effect clear @s speed
+effect clear @s jump_boost
+effect clear @s levitation
 scoreboard players operation $reset_temp_checkpoint checkpoint_order = @s checkpoint
 scoreboard players remove $reset_temp_checkpoint checkpoint_order 1
 scoreboard players operation $reset_temp_course checkpoint_course = @s gamestate

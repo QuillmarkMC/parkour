@@ -141,7 +141,7 @@ gamerule showDeathMessages false
 gamerule spectatorsGenerateChunks true
 #gamerule sendCommandFeedback false
 
-#Force Loads
+##Force Loads
 #Lobby
 forceload add -641 -49 -656 -64
 
@@ -206,7 +206,8 @@ forceload add 1026 372
 forceload add 1043 342
 forceload add 1020 333
 
-#Logo Summons
+##Summons
+#Logos
 kill @e[type=item_display,tag=logo]
 execute positioned -649.5 71.0 -39.00 summon minecraft:item_display run data merge entity @s {Tags:["logo"],Rotation:[0F,0F],"item":{id:"minecraft:iron_nugget",Count:1,tag:{CustomModelData:1}},transformation:{scale:[8.5f,8.5f,0.0f]}}
 execute positioned -615.5 67 -21.00 summon minecraft:item_display run data merge entity @s {Tags:["logo"],Rotation:[60F,0F],"item":{id:"minecraft:iron_nugget",Count:1,tag:{CustomModelData:2}},transformation:{scale:[8.5f,8.5f,0.0f]}}
@@ -216,3 +217,6 @@ execute positioned -682.50 67.94 20.50 summon minecraft:item_display run data me
 execute positioned -682.54 66.80 -20.54 summon minecraft:item_display run data merge entity @s {Tags:["logo"],Rotation:[300F,0F],"item":{id:"minecraft:iron_nugget",Count:1,tag:{CustomModelData:6}},transformation:{scale:[8.5f,8.5f,0.0f]}}
 
 function park:general/reset_descent_display_entities
+
+#Leaderboards
+function park:game/leaderboard/physical/summon
