@@ -155,6 +155,7 @@ forceload add -1071 1046
 forceload add -1107 1047
 forceload add -1065 1090
 forceload add -1170 1103
+forceload add -1114 1115
 
 #Sculking
 forceload add -11 0
@@ -214,6 +215,8 @@ execute positioned -615.50 69.50 22.0 summon minecraft:item_display run data mer
 execute positioned -649.57 68.46 39.80 summon minecraft:item_display run data merge entity @s {Tags:["logo"],Rotation:[180F,0F],"item":{id:"minecraft:iron_nugget",Count:1,tag:{CustomModelData:4}},transformation:{scale:[8.5f,8.5f,0.0f]}}
 execute positioned -682.50 67.94 20.50 summon minecraft:item_display run data merge entity @s {Tags:["logo"],Rotation:[240F,0F],"item":{id:"minecraft:iron_nugget",Count:1,tag:{CustomModelData:5}},transformation:{scale:[8.5f,8.5f,0.0f]}}
 execute positioned -682.54 66.80 -20.54 summon minecraft:item_display run data merge entity @s {Tags:["logo"],Rotation:[300F,0F],"item":{id:"minecraft:iron_nugget",Count:1,tag:{CustomModelData:6}},transformation:{scale:[8.5f,8.5f,0.0f]}}
+
+function park:general/reset_descent_display_entities
 
 #Leaderboards
 function park:game/leaderboard/physical/summon
