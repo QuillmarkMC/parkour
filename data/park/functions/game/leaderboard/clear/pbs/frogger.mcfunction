@@ -1,1 +1,1 @@
-scoreboard players set @s frogger_pb 2147483647
+scoreboard players set * frogger_pb 2147483647

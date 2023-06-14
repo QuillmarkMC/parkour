@@ -1,1 +1,1 @@
-scoreboard players set @s nightlife_pb 2147483647
+scoreboard players set * nightlife_pb 2147483647

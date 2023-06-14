@@ -1,1 +1,1 @@
-scoreboard players set @s undertow_pb 2147483647
+scoreboard players set * undertow_pb 2147483647
