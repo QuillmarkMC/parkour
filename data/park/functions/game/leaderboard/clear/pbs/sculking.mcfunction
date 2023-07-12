@@ -1,1 +1,1 @@
-scoreboard players set @s sculking_pb 2147483647
+scoreboard players set * sculking_pb 2147483647
