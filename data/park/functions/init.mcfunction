@@ -218,5 +218,8 @@ execute positioned -682.54 66.80 -20.54 summon minecraft:item_display run data m
 
 function park:general/reset_descent_display_entities
 
+#lobby credits
+function park:lobby/credits_room/init
+
 #Leaderboards
 function park:game/leaderboard/physical/summon
