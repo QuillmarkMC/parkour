@@ -1,0 +1,19 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "stepping_on": {
+      "block": {
+        "blocks": [
+          "minecraft:bone_block",
+          "minecraft:sculk",
+          "minecraft:black_concrete",
+          "minecraft:obsidian",
+          "minecraft:end_rod",
+          "minecraft:nether_bricks",
+          "minecraft:crimson_planks"
+        ]
+      }
+    }
+  }
+}
