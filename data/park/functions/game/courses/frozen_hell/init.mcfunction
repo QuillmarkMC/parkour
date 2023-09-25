@@ -1,7 +1,7 @@
 #Ghast
 execute as @e[tag=FHGhast] at @s run tp @s ~ ~-64 ~
 kill @e[tag=FHGhast]
-summon ghast 995.0 173.95 379.0 {Silent:1b,Invulnerable:1b,NoAI:1b,Rotation:[90F,0F],Tags:["FHGhast"]}
+summon ghast 996.0 173.95 379.0 {Silent:1b,Invulnerable:1b,NoAI:1b,Rotation:[90F,0F],Tags:["FHGhast"]}
 summon ghast 974.00 175.95 345.00 {Silent:1b,Invulnerable:1b,NoAI:1b,Rotation:[180F,0F],Tags:["FHGhast"]}
 
 #Checkpoints
@@ -35,7 +35,7 @@ execute positioned 971.5 171 310.5 run function park:game/checkpoints/summon
 data modify storage park:checkpoint_constructor Number set value 4
 data modify storage park:checkpoint_constructor Course set value 6
 data modify storage park:checkpoint_constructor Rotation set value 0.0f
-execute positioned 974.5 179 349.5 run function park:game/checkpoints/summon
+execute positioned 974.5 181 349.5 run function park:game/checkpoints/summon
 
 #5
 data modify storage park:checkpoint_constructor Number set value 5
