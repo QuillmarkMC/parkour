@@ -8,5 +8,5 @@ execute at @s if block ~ ~ ~ water run function park:game/checkpoints/oob
 execute if predicate park:tree_oob run function park:game/checkpoints/oob
 
 #Effects
-effect give @s minecraft:speed 999999 3 true
-effect give @s minecraft:jump_boost 999999 4 true
+effect give @s minecraft:speed infinite 3 true
+effect give @s minecraft:jump_boost infinite 4 true
