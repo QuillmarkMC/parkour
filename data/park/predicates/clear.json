@@ -1,0 +1,15 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "stepping_on": {
+      "block": {
+        "blocks": [
+          "minecraft:white_stained_glass",
+          "minecraft:gold_block",
+          "minecraft:iron_trapdoor"
+        ]
+      }
+    }
+  }
+}
