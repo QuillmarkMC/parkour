@@ -1,7 +1,8 @@
 {
     "pack": {
         "pack_format": 18,
-        "description": "Datapack for Dimension Dash"
+        "description": "Datapack for Dimension Dash",
+        "supported_formats": [18, 26]
     },
     "filter": {
         "block": [
