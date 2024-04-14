@@ -1,14 +1,14 @@
 fill -646 48 5 -654 47 5 air
 
 #heads
-setblock -646 48 5 player_wall_head[facing=north]{SkullOwner:{Name:"Strongis13"}}
-setblock -647 48 5 player_wall_head[facing=north]{SkullOwner:{Name:"ChiefCo1"}}
-setblock -648 48 5 player_wall_head[facing=north]{SkullOwner:{Name:"Diamondapollo"}}
-setblock -649 48 5 player_wall_head[facing=north]{SkullOwner:{Name:"Jarmzie"}}
-setblock -651 48 5 player_wall_head[facing=north]{SkullOwner:{Name:"CygnusGD"}}
-setblock -652 48 5 player_wall_head[facing=north]{SkullOwner:{Name:"Dragonking1355"}}
-setblock -653 48 5 player_wall_head[facing=north]{SkullOwner:{Name:"Flare199"}}
-setblock -654 48 5 player_wall_head[facing=north]{SkullOwner:{Name:"Techno_Guy_KWP"}}
+setblock -646 48 5 player_wall_head[facing=north]{profile:{name:"Strongis13"}}
+setblock -647 48 5 player_wall_head[facing=north]{profile:{name:"ChiefCo1"}}
+setblock -648 48 5 player_wall_head[facing=north]{profile:{name:"Diamondapollo"}}
+setblock -649 48 5 player_wall_head[facing=north]{profile:{name:"Jarmzie"}}
+setblock -651 48 5 player_wall_head[facing=north]{profile:{name:"CygnusGD"}}
+setblock -652 48 5 player_wall_head[facing=north]{profile:{name:"Dragonking1355"}}
+setblock -653 48 5 player_wall_head[facing=north]{profile:{name:"Flare199"}}
+setblock -654 48 5 player_wall_head[facing=north]{profile:{name:"Techno_Guy_KWP"}}
 
 #signs
 setblock -646 47 5 warped_wall_sign[facing=north]{front_text:{color:"white",has_glowing_text:true,messages:['""','{"text":"Strongis13","color":"yellow"}','{"text":"Project Lead","color":"white"}','""']},is_waxed:true}
