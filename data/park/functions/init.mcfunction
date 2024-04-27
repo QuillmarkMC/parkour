@@ -62,7 +62,7 @@ execute unless score $descent disabled matches 0.. run scoreboard players set $d
 execute unless score $sculking disabled matches 0.. run scoreboard players set $sculking disabled 0
 execute unless score $undertow disabled matches 0.. run scoreboard players set $undertow disabled 0
 execute unless score $frogger disabled matches 0.. run scoreboard players set $frogger disabled 0
-execute unless score nightlife disabled matches 0.. run scoreboard players set $nightlife disabled 0
+execute unless score $nightlife disabled matches 0.. run scoreboard players set $nightlife disabled 0
 execute unless score $frozen_hell disabled matches 0.. run scoreboard players set $frozen_hell disabled 0
 
 #Set Default Scores (N/A - **:**.*) THIS SHOULD ALMOST DEFINITELY NOT BE IN INIT

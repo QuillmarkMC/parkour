@@ -12,12 +12,12 @@ execute as @a if score @s timer_toggle matches 1 run function park:game/timer/ti
 function park:game/checkpoints/tick
 
 #Click detection
-execute as @a[scores={click=1..},nbt={SelectedItem:{tag:{lobby:1}}}] run function park:lobby/on_relog
-execute as @a[scores={click=1..},nbt={SelectedItem:{tag:{restart:1}}}] run function park:game/checkpoints/reset_player_fully
-execute as @a[scores={click=1..},nbt={SelectedItem:{tag:{checkpoint:1}}}] if score @s checkpoint matches 0 run function park:game/checkpoints/reset_player_fully
-execute as @a[scores={click=1..},nbt={SelectedItem:{tag:{checkpoint:1}}}] unless score @s checkpoint matches 0 run function park:game/checkpoints/reset_player
-execute as @a[scores={click=1..},nbt={SelectedItem:{tag:{team:1}}}] run function park:game/hotbar_utilities/team
-execute as @a[scores={click=1..},nbt={SelectedItem:{tag:{death:1}}}] run function park:game/hotbar_utilities/death
+execute as @a[scores={click=1..},nbt={SelectedItem:{components:{"minecraft:custom_data": {lobby: 1}}}}] run function park:lobby/on_relog
+execute as @a[scores={click=1..},nbt={SelectedItem:{components:{"minecraft:custom_data": {restart: 1}}}}] run function park:game/checkpoints/reset_player_fully
+execute as @a[scores={click=1..},nbt={SelectedItem:{components:{"minecraft:custom_data": {checkpoint: 1}}}}] if score @s checkpoint matches 0 run function park:game/checkpoints/reset_player_fully
+execute as @a[scores={click=1..},nbt={SelectedItem:{components:{"minecraft:custom_data": {checkpoint: 1}}}}] unless score @s checkpoint matches 0 run function park:game/checkpoints/reset_player
+execute as @a[scores={click=1..},nbt={SelectedItem:{components:{"minecraft:custom_data": {team: 1}}}}] run function park:game/hotbar_utilities/team
+execute as @a[scores={click=1..},nbt={SelectedItem:{components:{"minecraft:custom_data": {death: 1}}}}] run function park:game/hotbar_utilities/death
 execute as @a if score @s click matches 1.. run scoreboard players set @s click 0
 
 #OoB Detection (i have moved this to main tick)
