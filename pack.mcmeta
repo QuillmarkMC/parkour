@@ -1,17 +1,17 @@
 {
     "pack": {
-        "pack_format": 41,
+        "pack_format": 48,
         "description": "Datapack for Dimension Dash"
     },
     "filter": {
         "block": [
             {
                 "namespace": "minecraft",
-                "path": "recipes/.*"
+                "path": "recipe/.*"
             },
             {
                 "namespace": "minecraft",
-                "path": "advancements/.*"
+                "path": "advancement/.*"
             }
         ]
     }
