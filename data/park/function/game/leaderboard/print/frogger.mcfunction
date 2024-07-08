@@ -24,5 +24,6 @@ data modify storage park:ticks_to_time Ticks set from storage park:leaderboard_f
 function park:game/timer/ticks_to_time
 data modify storage park:leaderboard_print 5.time set from storage park:ticks_to_time Time
 
-tellraw @s [{"text":"FROGGER TOP TIMES","bold":true,"underlined":true,"color":"red"},{"text":" -","bold":true,"underlined":false}]
+tellraw @s [{"translate":"text.game.course_name.frogger","bold":true,"underlined":true,"color":"red"},{"translate":"text.lobby.leaderboard","bold":true,"underlined":true,"color":"red"},{"text":" -","bold":true,"underlined":false}]
+
 function park:game/leaderboard/print/current
