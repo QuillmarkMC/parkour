@@ -1,0 +1,2 @@
+tellraw @s [{"text": ""},{"text": "[!] ","color": "aqua","bold": true},{"translate":"text.lobby.credits.chat.click"},{"translate":"text.lobby.credits.chat.here","bold": true,"underlined": true,"color": "yellow","hoverEvent":{"action":"show_text","contents":[{"translate":"text.lobby.credits.chat.click_hover","italic":true,"color":"yellow"}]},"clickEvent":{"action":"open_url","value":"https://www.planetminecraft.com/project/dimension-dash"}},{"translate":"text.lobby.credits.chat.download_info"}]
+execute at @s run playsound block.note_block.bit record @s ~ ~ ~ 1 2
