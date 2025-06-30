@@ -12,3 +12,4 @@ advancement grant @s only park:inv_change
 item replace entity @s armor.feet with air
 title @s actionbar {"text":""}
 function park:game/leaderboard/physical/update/all
+attribute @s burning_time base set 0
