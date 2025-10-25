@@ -1,8 +1,8 @@
 {
     "pack": {
-        "pack_format": 81,
-        "description": "Datapack for Dimension Dash",
-        "supported_formats": [71, 81]
+        "min_format": [88,0],
+        "max_format": [88,0],
+        "description": "Datapack for Dimension Dash"
     },
     "filter": {
         "block": [

@@ -138,6 +138,7 @@ gamerule fallDamage false
 gamerule fireDamage false
 gamerule freezeDamage false
 gamerule keepInventory true
+gamerule locatorBar false
 gamerule mobGriefing false
 gamerule naturalRegeneration true
 gamerule playersSleepingPercentage 101
