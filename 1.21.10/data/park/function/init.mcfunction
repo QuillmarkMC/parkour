@@ -146,6 +146,7 @@ gamerule reducedDebugInfo false
 gamerule showDeathMessages false
 gamerule spectatorsGenerateChunks true
 #gamerule sendCommandFeedback false
+gamerule randomTickSpeed 0
 
 ##Force Loads
 #Lobby
