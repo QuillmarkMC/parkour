@@ -1,4 +1,8 @@
-#Checkpoints--These need to be changed, these are the checkpoints for Descent
+#Grim reaper
+kill @e[type=item_display,tag=SculkingGrimReaper]
+summon item_display -186.50947969388716 25.07000000000001 -1.5086715055497455 {item:{id:"phantom_membrane",components:{custom_model_data:{floats:[1]},item_model:"parkour:grim_reaper"},count:1},Rotation:[10f,0f],billboard:"fixed",Tags:["SculkingGrimReaper"]}
+
+#Checkpoints
 kill @e[tag=Checkpoint,tag=Sculking]
 
 #Start
