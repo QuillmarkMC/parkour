@@ -8,12 +8,14 @@ execute store result score $total ticks_to_time run data get storage park:ticks_
 scoreboard players operation $math ticks_to_time = $total ticks_to_time
 scoreboard players operation $math ticks_to_time /= $1200 ticks_to_time
 execute store result storage park:ticks_to_time Time.Minutes int 1 run scoreboard players get $math ticks_to_time
+data modify storage park:ticks_to_time Time.Minutes set string storage park:ticks_to_time Time.Minutes
 
 #Calc secs
 scoreboard players operation $math ticks_to_time = $total ticks_to_time
 scoreboard players operation $math ticks_to_time %= $1200 ticks_to_time
 scoreboard players operation $math ticks_to_time /= $20 ticks_to_time
 execute store result storage park:ticks_to_time Time.Seconds int 1 run scoreboard players get $math ticks_to_time
+data modify storage park:ticks_to_time Time.Seconds set string storage park:ticks_to_time Time.Seconds
 
 #Format secs
 execute unless score $math ticks_to_time matches 0..9 run data modify storage park:ticks_to_time Time.SecsZero set value ""
@@ -24,6 +26,7 @@ scoreboard players operation $math ticks_to_time = $total ticks_to_time
 scoreboard players operation $math ticks_to_time %= $20 ticks_to_time
 scoreboard players operation $math ticks_to_time /= $2 ticks_to_time
 execute store result storage park:ticks_to_time Time.Tenths int 1 run scoreboard players get $math ticks_to_time
+data modify storage park:ticks_to_time Time.Tenths set string storage park:ticks_to_time Time.Tenths
 
 #For max time formatting
 execute if score $total ticks_to_time matches 2147483647 run data modify storage park:ticks_to_time Time.Minutes set value "**"
