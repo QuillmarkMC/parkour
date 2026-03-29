@@ -145,7 +145,7 @@ gamerule players_sleeping_percentage 101
 gamerule reduced_debug_info false
 gamerule show_death_messages false
 gamerule spectators_generate_chunks true
-#gamerule send_command_feedback false
+gamerule send_command_feedback false
 gamerule random_tick_speed 0
 
 ##Force Loads

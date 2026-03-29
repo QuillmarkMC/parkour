@@ -1,7 +1,7 @@
 data modify storage park:leaderboard_manip RemoveID set value 0
 $execute store result storage park:leaderboard_manip RemoveID int 1 run scoreboard players get $(Player) player_id
 
-execute if data storage park:leaderboard_manip {RemoveID:0} run tellraw @s ["",{"text":"ERROR","color":"red"},{"text":": Player name was wrong or does not exist!"}]
+execute if data storage park:leaderboard_manip {RemoveID:0} run tellraw @s [{text:"[!] ",color:"dark_red",bold:true},{translate:"park.ddhelp.player_not_found",color:"white",bold:false}]
 execute if data storage park:leaderboard_manip {RemoveID:0} run return -1
 
 function ddhelp:zzz_do_not_run/check_all_leaderboards with storage park:leaderboard_manip
