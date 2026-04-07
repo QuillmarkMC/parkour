@@ -1,0 +1,1 @@
+scoreboard players set @s frozen_hell_pb 2147483647

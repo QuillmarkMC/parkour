@@ -1,0 +1,1 @@
+scoreboard players set @s descent_pb 2147483647
