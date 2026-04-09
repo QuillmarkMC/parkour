@@ -123,7 +123,7 @@ gamerule command_block_output false
 gamerule raids false
 gamerule advance_time false
 gamerule entity_drops false
-gamerule fire_spread_radius_around_player -1
+gamerule fire_spread_radius_around_player 0
 gamerule spawn_phantoms false
 gamerule immediate_respawn true
 gamerule limited_crafting true
@@ -145,7 +145,7 @@ gamerule players_sleeping_percentage 101
 gamerule reduced_debug_info false
 gamerule show_death_messages false
 gamerule spectators_generate_chunks true
-#gamerule send_command_feedback false
+gamerule send_command_feedback false
 gamerule random_tick_speed 0
 
 ##Force Loads
