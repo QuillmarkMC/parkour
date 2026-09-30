@@ -1,11 +1,11 @@
 {
-  "type": "minecraft:entity_properties",
+  "condition": "minecraft:entity_properties",
   "entity": "this",
   "predicate": {
     "stepping_on": {
       "block": {
         "blocks": [
-          "minecraft:blue_stained_glass"
+          "minecraft:red_stained_glass"
         ]
       }
     }
